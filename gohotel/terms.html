@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Go Hotels</title>
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="assets/css/zeplin.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="header-main clearfix">
+            <a href="#default" class="logo"><img src="assets/images/logo/logo.png"></a>
+            
+            <div class="header-right">
+                <a class="menu-container" onclick="openNav()"><div class="menu-text">MENU<span><i class="fe-menu"></i></span> </div></a>
+            </div>
+            <div class="header-right book-now hidden-lg hidden-md hidden-sm">
+                <a class=" menu-container2 text-uppercase" href="#home"><div class="booknow-text">book now</div></a>
+            </div>
+          </div>
+
+            <div id="myNav" class="menu-overlay">
+                <a href="javascript:void(0)" class="closebtn text-uppercase" onclick="closeNav()">Close <img src="assets/images/materials/menu-close.png"></a>
+                <a href="javascript:void(0)" class="menu-logo text-uppercase"><img class="overlay-logo" src="assets/images/logo/menu-logo.png"></a>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-mg-12">
+                            <div class="col-md-3">
+                                <div class="overlay-content clearfix">
+                                    <div class="menu-content">
+                                        <a href="#">Home <i class="fe-chevron-right"></i></a>
+                                        <a href="promo.html">Promos and Packages <i class="fe-chevron-right"></i></a>
+                                        <a href="updates.html">Updates <i class="fe-chevron-right"></i></a>
+                                        <a href="#">Happy to Care <i class="fe-chevron-right"></i></a>
+                                        <a href="blog.html">Ready? Set. Go! <i class="fe-chevron-right"></i></a>
+                                        <a href="about-us.html">About Us <i class="fe-chevron-right"></i></a>
+                                        <a href="contact-us.html">Contact Us <i class="fe-chevron-right"></i></a>
+                                        <a href="#">FAQS <i class="fe-chevron-right"></i></a>
+                                    </div>
+                                <div class="reservation-container">
+                                    <div class="reservation-text">Reservation</div>
+                                    <div class="reservation_contact">
+                                        <img class="tree-img" src="assets/images/materials/menu-tree.png">
+                                    </div>
+                                    <div class="reservation-contacts">
+                                        <div class="contact1">
+                                            <a href="tel:+639988887788">+63 998 888 7788</a>
+                                        </div>
+                                        <div class="contact2">
+                                            <a href="tel:+639178887788">+63 917-888-7788</a>
+                                        </div>
+                                        <div class="contact">
+                                            <a href="tel:+639988887788">reservations@gohotels.ph</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="container menu-hotels">
+                                <div class="menu-hotels-container col-md-9">
+                                <img class="hotels-upper-design" src="assets/images/materials/hotels-upper-design.png">
+                                <div class="menu-hotel-label text-uppercase">Hotels</div>
+
+                                <ul class="menu-hotels-list">
+                                    <li><a href="#home"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span>
+                                    </li>
+                                    <li>
+                                        <a href="#about"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li>
+                                    <li><a href="#clients"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li> 
+                                    <li><a href="#clients"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li>
+                                </ul>
+
+                                    <!-- <div class="menu-hotels-list">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Bacolod</span>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Butuan</span>    
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Dumaguete</span>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span><p>Ermita</p>
+                                                    <p>Ermita</p>
+                                                </span>
+                                                <span><div>test</div></span>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+          
+          <div class="about-us-container">
+              <div class="about-us-text text-uppercase">
+                WEBSITE TERMS AND CONDITIONS
+              </div>
+          </div>
+
+        <div class="terms-container">
+            <p>
+                THE TERMS AND CONDITIONS SET FORTH BELOW (THE "TERMS OF USE") GOVERN YOUR USE OF THIS SITE ON THE WORLD WIDE WEB. THESE TERMS ARE A LEGAL CONTRACT BETWEEN YOU AND ROBINSONS LAND CORPORATION AND GOVERN YOUR ACCESS TO, AND USE OF, THE ROBINSONS LAND WEBSITE LOCATED AT WWW.ROBINSONSLAND.COM (THE "WEBSITE"). IF YOU DO NOT AGREE WITH ANY OF THESE TERMS, DO NOT ACCESS OR OTHERWISE USE THIS WEBSITE OR ANY INFORMATION CONTAINED ON THIS WEBSITE. YOUR USE OF THIS WEBSITE OR ANY INFORMATION CONTAINED ON THIS WEBSITE SHALL CONSTITUTE YOUR AGREEMENT TO ABIDE BY EACH OF THE TERMS SET FORTH BELOW. ANY BREACH OR VIOLATION BY YOU OR BY ANY PERSON ACTING FOR AND ON YOUR BEHALF OF THESE TERMS OF USE WILL BE PROSECUTED TO THE FULLEST EXTENT BY ROBINSONS LAND. This website is owned by Robinsons Land Corporation ("Robinsons Land"). Robinsons Land reserves the right, at its sole discretion, to change, modify, add to, or otherwise alter these Terms of Use at any time. Such changes and/or modifications shall become effective immediately upon posting, so please review these Terms of Use periodically. Your continued use of this website following the posting of changes and/or modifications will constitute your acceptance of the revised Terms of Use (including Robinsons Land's Privacy Policy). Authorized Use Robinsons Land provides this website solely to permit you to determine the availability of products and services offered on the website and to make legitimate reservations or otherwise transact business with Robinsons Land, and for no other purposes. The website is for your personal and non-commercial use. You agree that you will use the website's services only to make legitimate reservations or purchases for you or for another person for whom you are authorized to act both legally and under the terms of this Terms of Use. Hence, unless you are specifically authorized otherwise by Robinsons Land, you are permitted to use this website only for the following personal and non-commercial purposes: (1) viewing the website; (2) making bookings; (3) reviewing or changing bookings; (4) transferring to other websites though links provided on this website; and (5) making use of other facilities that may be provided on the website. You are not permitted to use any automated system or software to extract data from this website for commercial purposes ("screen-scraping"). You hereby expressly agree not to use this website to: Modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any information, software, products or services obtained from this website; "Meta-search" this website, send, or cause to be sent, any automated queries of any sort to this website, or use this website in any commercial manner or access this website for any commercial gain other than the purpose specifically authorized by these Terms of Use; Impersonate any person or entity, or otherwise state or falsely misrepresent your affiliation with a person or entity; Forge or otherwise manipulate identifiers in order to disguise the origin of any user of the website including yourself; Interfere with or disrupt this website or servers or networks connected to this website or disobey any requirements, procedures, policies or regulations of networks connected to this website, including using any device, software or routine to bypass the website's robot exclusion mechanisms; intentionally or unintentionally violate any applicable local, national or international law; and collect or store any personal data of any other user that you obtained by any means through this website. Intellectual Property Robinsons Land is the registered owner of and holds the title to and all interest (including security interest) in the trademark "Robinsons Land and Device" and the owns all intellectual property rights to and all interest in the tradename Robinsons Land and the Robinsons Land logo. Intellectual Property Rights (including, but not limited to the copyright, patent and trademark) in the material contained in this website belongs to Robinsons Land. No part of such materials included may be reproduced, transmitted, downloaded, saved, displayed or used in any manner or for any purpose without prior written authority from Robinsons Land. Third-Party Links Any links to third-party websites that may appear on this website are provided only as a convenience to you. You acknowledge and agree that Robinsons Land is not responsible for the availability of these external sites or resources and the appearance of the links in this website in no way imply any affiliation, sponsorship, endorsement, or acceptance of any information or views provided on those linked websites. Robinsons Land does not monitor the linked websites for accuracy or content, and does not warrant and has no liability for the information contained thereon. The information provided on the linked websites and any warranty with regard thereto is solely the responsibility of the providers of that information. If you decide to access third-party websites through links from this website, you do so at your own risk. Robinsons Land will not be responsible or liable, directly or indirectly, for any damage or loss caused or allegedly caused by or in connection with your use of the linked websites or your reliance on any content, goods or services available on or through any such linked website or resource. Dealings with Advertisers Any correspondence or business dealings you may have with, or your participation in promotions of advertisers found on or through this website, including any payment you may make and any delivery to you of related goods or services, and any other terms, conditions, warranties or representations relating to such dealings are exclusively between you and the advertiser. Robinsons Land will not be liable to you for any loss or damage of any kind whatsoever that you may incur or sustain by reason of any such dealings or as a result of the presence of such advertisers on this website.
+            </p>
+            <p><strong>
+                DISCLAIMER OF WARRANTIES
+            </strong></p>
+            <p>
+                YOU EXPRESSLY UNDERSTAND AND AGREE THAT: THE USE OF THIS WEBSITE AND ITS CONTENTS IS AT YOUR SOLE RISK. THE WEBSITE AND THE CONTENTS ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. ROBINSONS LAND AND ITS AFFILIATES, OFFICERS, EMPLOYEES, AGENTS AND LICENSORS MAKE NO REPRESENTATION WHATSOEVER AS TO COMPLETENESS OR ACCURACY OF ANY CONTENTS OR ANY INFORMATION IN THIS WEBSITE AND EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, QUALITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. ROBINSONS LAND AND ITS AFFILIATES, OFFICERS, EMPLOYEES, AGENTS, AND LICENSORS MAKE NO WARRANTY THAT THE WEBSITE AND THE CONTENTS WILL MEET YOUR REQUIREMENTS, OR THAT THE USE THEREOF WILL BE UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE, THAT THE RESULTS THAT MAY BE OBTAINED BY YOUR USE OF THE WEBSITE WILL BE ACCURATE OR RELIABLE, THAT THE QUALITY OF THE PRODUCTS AND SERVICES, INFORMATION OR OTHER MATERIALS THAT YOU OBTAIN FROM THE WEBSITE WILL MEET YOUR EXPECTATIONS, AND THAT ANY ERRORS WILL BE CORRECTED. YOU ACCESS AT YOUR OWN DISCRETION AND RISK ANY MATERIAL THAT YOU DOWNLOAD OR OBTAIN THROUGH THE USE OF THE WEBSITE AND YOU WILL BE SOLELY RESPONSIBLE FOR AND HEREBY WAIVE ANY AND ALL CLAIMS AND CAUSES OF ACTION WITH RESPECT TO ANY DAMAGE TO YOUR COMPUTER SYSTEM, INTERNET ACCESS, DOWNLOAD OR DISPLAY DEVICE, OR LOSS OF DATA THAT MAY RESULT FROM THE DOWNLOAD OF ANY SUCH MATERIAL. NO WARRANTY THAT IS NOT EXPRESSLY STATED HEREIN SHALL BE CREATED BY REASON OF ANY ADVICE OR INFORMATION THAT YOU OBTAIN FROM THIS WEBSITE. Modifications Robinsons Land may, at any time and from time to time, make modifications, changes, and alterations to this website and the Contents, including these Terms of Use, or any part thereof without prior notice and without incurring any liability to you or to any third party. You are responsible for regularly reviewing these Terms of Use. Your continued use of this website following any changes, revisions, modifications or alterations shall constitute your acceptance of such changes, revisions modifications or alterations.  
+            </p>
+            <p><strong>
+                LIMITATION OF LIABILITY
+            </strong></p>
+            <p>
+                YOU EXPRESSLY UNDERSTAND AND AGREE THAT ROBINSONS LAND AND ITS AFFILIATES, OFFICERS, EMPLOYEES, AGENTS AND LICENSORS WILL HAVE NO LIABILITY WHATSOEVER TO YOU, TO ANY PARTY CLAIMING BY, THROUGH OR AGAINST YOU OR TO ANY THIRD PARTY FOR ANY PUNITIVE, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES, INCLUDING WITHOUT LIMITATION, COSTS, CHARGES OR DAMAGES CONSTITUTING LOSS OF PROFITS, GOODWILL, USE, DATA OR OTHER INTANGIBLE LOSSES, EVEN IF ROBINSONS LAND HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, THAT MAY ARISE OUT OF OR IN CONNECTION WITH (1) YOUR USE OR INABILITY TO USE THIS WEBSITE OR ACCESS THE CONTENTS, (2) THE COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, (3) UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR TRANSMISSION OR DATA, OR (4) ANY OTHER MATTERS RELATING TO THE WEBSITE AND THE CONTENTS. Indemnity You agree to indemnify and hold Robinsons Land and its affiliates, officers, employees, agents and licensors free and harmless from any claim or demand, including reasonable attorney's fees, made by any third party due to, arising out of or in connection with your use of this website and the Contents, your connection to this website, tour breach of any of the provisions of this Terms of Use, or your violation of any right of any other user of this website. Termination Robinsons Land may, in its sole discretion, without prior notice and without incurring any liability to you, terminate or limit your access to this website for any justifiable cause, including without limitation (1) your breach or violation of these Terms of Use, or other incorporated agreements or guidelines, (2) upon the request of any law enforcement or government agency, (3) discontinuance or any material modification to this website or any part thereof, (4) extended periods of inactivity, and (5) your engagement in fraudulent, illegal or prohibited activities. Non-Waiver No failure by Robinsons Land to exercise or enforce any right or provision of these Terms of Use shall constitute a waiver of such right or provision, nor will any waiver be deemed a waiver of any other right or provision at that time or at any other time. Governing Law These Terms of Use and the relationship between the parties shall be governed by and construed in accordance with the laws of the Republic of the Philippines without reference to its conflicts of law provisions. Any and all claims, causes of action, or disputes relating or pursuant to, arising out of or in connection with these Terms of Use shall be brought before the appropriate courts of the Republic of the Philippines to the exclusion of all other courts and venues. You agree to submit to the personal jurisdiction of these courts and hereby waive any and all objections to the exercise of jurisdiction over the parties by such courts and to venue in such courts on any ground, including without limitation on the ground of inconvenient forum. However, nothing herein shall preclude Robinsons Land from seeking injunctive relief (or any other provisional remedy) from any court having jurisdiction over you or taking proceedings against you in any other court of competent jurisdiction.  
+            </p>
+
+            <p><strong>
+                DISCLAIMER
+            </strong></p>
+            
+                <p>gohotels.ph reserves the right to amend its policies, rules and regulations, terms and conditions, and any content on its website without prior notice. </p>
+        </div>
+    </div>
+        
+
+    <footer id="footerslant">
+        <div class="container partners-logo text-center hidden-xs">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner1.png">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner2.png">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner3.png">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer-container flex-container hidden-xs">
+            <div class="flex-item flex-item-1">
+                <div class="footer-row">
+                    <div class="contact-column">
+                        <div class="footer-logo">
+                            <img src="assets/images/static/go-hotel.png">
+                        </div>
+                        <div class="contact-container">
+                            <div class="footer_contact">
+                                <img class="phone-img" src="assets/images/logo/contact.png">
+                                <!-- <a href="tel:+639988887788">&nbsp;&nbsp;+63 998 888 7788</a> -->
+                            </div>
+                            <div class="footer-contacts">
+                                <div class="footer_contact ml-4 contact1">
+                                    <a href="tel:+639988887788">+63 998 888 7788</a>
+                                </div>
+                                <div class="footer_contact ml-4">
+                                    <a href="tel:+639988887788">+63 998 888 7788</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="contact-container footer-email">
+                            <div class="footer_contact">
+                                <img class="email-img" src="assets/images/logo/email.png">
+                                <a href="mailto:reservations@gohotels.ph" target="_blank">&nbsp;&nbsp;&nbsp;reservations@gohotels.ph</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item flex-item-2">
+                <div class="hotels-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Our Hotels
+                    </div>
+
+                    <div class="footer-hotels">
+                        <div class="row">
+                            <div class="col-sm-6">
+                              <div class="footer-text"><a href="">Bacolod</a></div>
+                              <div class="footer-text"><a href="">Butuan</a></div>
+                              <div class="footer-text"><a href="">Dumaguete</a></div>
+                              <div class="footer-text"><a href="">Ermita - Manila</a></div>
+                              <div class="footer-text"><a href="">Iligan</a></div>
+                              <div class="footer-text"><a href="">Iloilo</a></div>
+                              <div class="footer-text"><a href="">Lanang - Davao</a></div>
+                              <div class="footer-text"><a href="">Mandaluyong</a></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-text"><a href="">Manila Airport Road</a></div>
+                                <div class="footer-text"><a href="">North Edsa - Quezon City</a></div>
+                                <div class="footer-text"><a href="">Ortigas Center</a></div>
+                                <div class="footer-text"><a href="">Otis - Manila</a></div>
+                                <div class="footer-text"><a href="">Puerto Princesa</a></div>
+                                <div class="footer-text"><a href="">Tacloban</a></div>
+                                <div class="footer-text"><a href="">Timog - Quezon City</a></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item flex-item-3">
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Company
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="footer-text"><a href="">Happy to Care</a></div>
+                        <div class="footer-text"><a href="about-us.html">About Us</a></div>
+                        <div class="footer-text"><a href="terms.html">Terms & Conditions</a></div>
+                        <div class="footer-text"><a href="policy.html">Privacy Policy</a></div>
+                        <div class="footer-text"><a href="copyright.html">Copyright</a></div>
+                        <div class="footer-text"><a href="disclaimer.html">Disclaimer</a></div>
+                        <div class="footer-text"><a href="contact-us.html">Contact Us</a></div>
+                        <div class="footer-text"><a href="careers.html">Careers</a></div>
+                        <div class="footer-text"><a href="">FAQs</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex-item flex-item-4">
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Stay up to date
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="to-receive-text">To receive our newsletter please add your email address below.</div>
+
+                        <div class="subscribe-form">
+                            <form class="form-inline">
+                                <input type="email" placeholder="Enter your email address">
+                                <label>
+                                <button type="submit">Subscribe</button>
+                              </form>
+                        </div>
+
+                        
+                        
+                        <div class="social-media">
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/facebook.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/twitter.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/instagram.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/youtube.png"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+
+        
+        <div class="footer-accordion hidden-md hidden-lg hidden-sm">
+        
+            <div class="container partners-logo text-center">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner1.png">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner2.png">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner3.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-hrcontainer">
+                <hr class="mobile-hr">
+            </div>
+
+            <div class="container footer-mobile clearfix">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="col-xs-4">
+                            <div class="footer-logo">
+                                <img src="assets/images/static/go-hotel.png">
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="footer_contact">
+                                <img src="assets/images/logo/contact.png">
+                                <a href="tel:+639988887788">&nbsp;&nbsp;+63 998 888 7788</a>
+                            </div>
+                            <div class="footer_contact ml-4">
+                                <a href="tel:+639988887788">+63 998 888 7788</a>
+                            </div>
+                            <div class="footer_contact">
+                                <img src="assets/images/logo/email.png">
+                                <a href="">&nbsp;&nbsp;&nbsp;reservations@gohotels.ph</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="accordion-content">
+                <button class="accordion text-uppercase">
+                    Our Hotels
+                </button>
+                <div class="panel">
+                    <div class="hotels-column">
+                        
+    
+                        <div class="footer-hotels">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="footer-text"><a href="">Bacolod</a></div>
+                                  <div class="footer-text"><a href="">Butuan</a></div>
+                                  <div class="footer-text"><a href="">Dumaguete</a></div>
+                                  <div class="footer-text"><a href="">Ermita - Manila</a></div>
+                                  <div class="footer-text"><a href="">Iligan</a></div>
+                                  <div class="footer-text"><a href="">Iloilo</a></div>
+                                  <div class="footer-text"><a href="">Lanang - Davao</a></div>
+                                  <div class="footer-text"><a href="">Mandaluyong</a></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="footer-text"><a href="">Manila Airport Road</a></div>
+                                    <div class="footer-text"><a href="">North Edsa - Quezon City</a></div>
+                                    <div class="footer-text"><a href="">Ortigas Center</a></div>
+                                    <div class="footer-text"><a href="">Otis - Manila</a></div>
+                                    <div class="footer-text"><a href="">Puerto Princesa</a></div>
+                                    <div class="footer-text"><a href="">Tacloban</a></div>
+                                    <div class="footer-text"><a href="">Timog - Quezon City</a></div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="accordion text-uppercase">
+                    Company
+                </button>
+                <div class="panel">
+                    <div class="company-column">
+                        
+                        <div class="footer-hotels">
+                            <div class="footer-text"><a href="">Happy to Care</a></div>
+                            <div class="footer-text"><a href="about-us.html">About Us</a></div>
+                            <div class="footer-text"><a href="terms.html">Terms & Conditions</a></div>
+                            <div class="footer-text"><a href="policy.html">Privacy Policy</a></div>
+                            <div class="footer-text"><a href="copyright.html">Copyright</a></div>
+                            <div class="footer-text"><a href="disclaimer.html">Disclaimer</a></div>
+                            <div class="footer-text"><a href="">Contact Us</a></div>
+                            <div class="footer-text"><a href="">Careers</a></div>
+                            <div class="footer-text"><a href="">FAQs</a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Stay up to date
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="to-receive-text">To receive our newsletter please add your email address below.</div>
+                        <div class="subscribe-form">
+                            <form class="form-inline">
+                                <input type="email" placeholder="Enter your email address">
+                                <label>
+                                <button type="submit">Subscribe</button>
+                              </form>
+                        </div>
+    
+                        
+                        
+                        <div class="social-media">
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/facebook.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/twitter.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/instagram.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/youtube.png"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-language clearfix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class=col-lg-12>
+                        <div class="col-lg-10 col-xs-12">
+                            <div class="footer-copyright">
+                                ©2019 Go Hotels. All Rights Reserved.
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-xs-12">
+                            <div class="language-option">
+                                <label class="language-drpdwn">
+                                    <select class="language">
+                                        <option>English</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+            
+    </footer>
+
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Go Hotels</title>
+        <!-- App css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="assets/css/zeplin.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="header-main clearfix">
+            <a href="#default" class="logo"><img src="assets/images/logo/logo.png"></a>
+            
+            <div class="header-right">
+                <a class="menu-container" onclick="openNav()"><div class="menu-text">MENU<span><i class="fe-menu"></i></span> </div></a>
+            </div>
+            <div class="header-right book-now hidden-lg hidden-md hidden-sm">
+                <a class=" menu-container2 text-uppercase" href="#home"><div class="booknow-text">book now</div></a>
+            </div>
+          </div>
+
+            <div id="myNav" class="menu-overlay">
+                <a href="javascript:void(0)" class="closebtn text-uppercase" onclick="closeNav()">Close <img src="assets/images/materials/menu-close.png"></a>
+                <a href="javascript:void(0)" class="menu-logo text-uppercase"><img class="overlay-logo" src="assets/images/logo/menu-logo.png"></a>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-mg-12">
+                            <div class="col-md-3">
+                                <div class="overlay-content clearfix">
+                                    <div class="menu-content">
+                                        <a href="#">Home <i class="fe-chevron-right"></i></a>
+                                        <a href="promo.html">Promos and Packages <i class="fe-chevron-right"></i></a>
+                                        <a href="updates.html">Updates <i class="fe-chevron-right"></i></a>
+                                        <a href="#">Happy to Care <i class="fe-chevron-right"></i></a>
+                                        <a href="blog.html">Ready? Set. Go! <i class="fe-chevron-right"></i></a>
+                                        <a href="about-us.html">About Us <i class="fe-chevron-right"></i></a>
+                                        <a href="contact-us.html">Contact Us <i class="fe-chevron-right"></i></a>
+                                        <a href="#">FAQS <i class="fe-chevron-right"></i></a>
+                                    </div>
+                                <div class="reservation-container">
+                                    <div class="reservation-text">Reservation</div>
+                                    <div class="reservation_contact">
+                                        <img class="tree-img" src="assets/images/materials/menu-tree.png">
+                                    </div>
+                                    <div class="reservation-contacts">
+                                        <div class="contact1">
+                                            <a href="tel:+639988887788">+63 998 888 7788</a>
+                                        </div>
+                                        <div class="contact2">
+                                            <a href="tel:+639178887788">+63 917-888-7788</a>
+                                        </div>
+                                        <div class="contact">
+                                            <a href="tel:+639988887788">reservations@gohotels.ph</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="container menu-hotels">
+                                <div class="menu-hotels-container col-md-9">
+                                <img class="hotels-upper-design" src="assets/images/materials/hotels-upper-design.png">
+                                <div class="menu-hotel-label text-uppercase">Hotels</div>
+
+                                <ul class="menu-hotels-list">
+                                    <li><a href="#home"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span>
+                                    </li>
+                                    <li>
+                                        <a href="#about"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li>
+                                    <li><a href="#clients"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li> 
+                                    <li><a href="#clients"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li>
+                                </ul>
+
+                                    <!-- <div class="menu-hotels-list">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Bacolod</span>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Butuan</span>    
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Dumaguete</span>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span><p>Ermita</p>
+                                                    <p>Ermita</p>
+                                                </span>
+                                                <span><div>test</div></span>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+          
+          <div class="about-us-container">
+              <div class="about-us-text text-uppercase">
+                  ABOUT US
+              </div>
+          </div>
+
+        <div class="terms-container">
+          <div class="partners-container">
+            <div class="partner-row">
+                <div class="partner-column">
+                    <div class="logo-container-left">
+                            <img class="about-logo" src="assets/images/static/jg-summit.png">
+                        
+                          <div class="about-details">
+                            <p>JG Summit Holdings, Inc. is one of the leading conglomerates in the Philippines, with business interests in Food and Beverages, Real Estate and Hotels, Air Transportation, Banking and Petrochemicals, as well as core investments in Real Estate, Telecommunications and in Power Distribution.</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="partner-column">
+                    <div class="logo-container-right">
+                            <img class="about-logo" src="assets/images/static/rob-land.png">
+                     
+                          <div class="about-details">
+                            <p>Robinsons Land Corporation (RLC), one of the Philippines’ leading real estate companies, is involved in the development and operation of shopping malls and hotels. It is also one of the country’s most reputable developers of mixed-use properties, office buildings, residential condominiums, as well as land and residential housing developments, including socialized housing projects located in key cities and other urban areas nationwide.</p>
+                          </div>
+                    </div>
+                </div>
+              </div>
+
+          <div class="container">
+              <hr class="hr-about">
+          </div>
+
+          <div class="">
+            <div class="partner-row">
+                <div class="partner-column">
+                    <div class="logo-container-left">
+                            <img class="about-logo" src="assets/images/static/rob-hotel.png">
+                          <div class="about-details">
+                            <p>With the right hospitable atmosphere and a very accommodating team, Robinsons Hotels and Resorts moves with the guest’s utmost comfort and convenience in mind. Encompassing detail-oriented service in front of and behind the scenes, we count the guests’ smiles as an indication of a job well done. The Hotels Division owns and operates three brand segments. In the international deluxe category, it has the IHG-managed Crowne Plaza Galleria and Holiday Inn Galleria. For the RLC-managed there is the Summit Hotels brand and the third brand group is the start-up essential service hotel chain Go Hotels.</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="partner-column">
+                    <div class="logo-container-right">
+                            <img class="about-logo" src="assets/images/static/go-hotel.png">
+                          <div class="about-details">
+                            <p>Affordable without sacrificing quality service and accommodation, this is what Go Hotels offers to its guests. Being an essential service hotel, Go Hotels lets you pay only for the basic things you need when staying in a hotel. Other services can be availed through add-ons, ensuring a complete and convenient travel experience. Operating on the “book early, pay less” concept, our variably-priced room rates reward those who plan and book early. The growing portfolio of Go Hotels is a testament to the emergence and growing number of smart travelers.</p>
+                          </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+    
+    </div>
+
+
+    <footer id="footerslant">
+        <div class="container partners-logo text-center hidden-xs">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner1.png">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner2.png">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner3.png">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer-container flex-container hidden-xs">
+            <div class="flex-item flex-item-1">
+                <div class="footer-row">
+                    <div class="contact-column">
+                        <div class="footer-logo">
+                            <img src="assets/images/static/go-hotel.png">
+                        </div>
+                        <div class="contact-container">
+                            <div class="footer_contact">
+                                <img class="phone-img" src="assets/images/logo/contact.png">
+                                <!-- <a href="tel:+639988887788">&nbsp;&nbsp;+63 998 888 7788</a> -->
+                            </div>
+                            <div class="footer-contacts">
+                                <div class="footer_contact ml-4 contact1">
+                                    <a href="tel:+639988887788">+63 998 888 7788</a>
+                                </div>
+                                <div class="footer_contact ml-4">
+                                    <a href="tel:+639988887788">+63 998 888 7788</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="contact-container footer-email">
+                            <div class="footer_contact">
+                                <img class="email-img" src="assets/images/logo/email.png">
+                                <a href="mailto:reservations@gohotels.ph" target="_blank">&nbsp;&nbsp;&nbsp;reservations@gohotels.ph</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item flex-item-2">
+                <div class="hotels-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Our Hotels
+                    </div>
+
+                    <div class="footer-hotels">
+                        <div class="row">
+                            <div class="col-sm-6">
+                              <div class="footer-text"><a href="">Bacolod</a></div>
+                              <div class="footer-text"><a href="">Butuan</a></div>
+                              <div class="footer-text"><a href="">Dumaguete</a></div>
+                              <div class="footer-text"><a href="">Ermita - Manila</a></div>
+                              <div class="footer-text"><a href="">Iligan</a></div>
+                              <div class="footer-text"><a href="">Iloilo</a></div>
+                              <div class="footer-text"><a href="">Lanang - Davao</a></div>
+                              <div class="footer-text"><a href="">Mandaluyong</a></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-text"><a href="">Manila Airport Road</a></div>
+                                <div class="footer-text"><a href="">North Edsa - Quezon City</a></div>
+                                <div class="footer-text"><a href="">Ortigas Center</a></div>
+                                <div class="footer-text"><a href="">Otis - Manila</a></div>
+                                <div class="footer-text"><a href="">Puerto Princesa</a></div>
+                                <div class="footer-text"><a href="">Tacloban</a></div>
+                                <div class="footer-text"><a href="">Timog - Quezon City</a></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item flex-item-3">
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Company
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="footer-text"><a href="">Happy to Care</a></div>
+                        <div class="footer-text"><a href="about-us.html">About Us</a></div>
+                        <div class="footer-text"><a href="terms.html">Terms & Conditions</a></div>
+                        <div class="footer-text"><a href="policy.html">Privacy Policy</a></div>
+                        <div class="footer-text"><a href="copyright.html">Copyright</a></div>
+                        <div class="footer-text"><a href="disclaimer.html">Disclaimer</a></div>
+                        <div class="footer-text"><a href="contact-us.html">Contact Us</a></div>
+                        <div class="footer-text"><a href="careers.html">Careers</a></div>
+                        <div class="footer-text"><a href="">FAQs</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex-item flex-item-4">
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Stay up to date
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="to-receive-text">To receive our newsletter please add your email address below.</div>
+
+                        <div class="subscribe-form">
+                            <form class="form-inline">
+                                <input type="email" placeholder="Enter your email address">
+                                <label>
+                                <button type="submit">Subscribe</button>
+                              </form>
+                        </div>
+
+                        
+                        
+                        <div class="social-media">
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/facebook.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/twitter.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/instagram.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/youtube.png"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+
+        
+        <div class="footer-accordion hidden-md hidden-lg hidden-sm">
+        
+            <div class="container partners-logo text-center">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner1.png">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner2.png">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner3.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-hrcontainer">
+                <hr class="mobile-hr">
+            </div>
+
+            <div class="container footer-mobile clearfix">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="col-xs-4">
+                            <div class="footer-logo">
+                                <img src="assets/images/static/go-hotel.png">
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="footer_contact">
+                                <img src="assets/images/logo/contact.png">
+                                <a href="tel:+639988887788">&nbsp;&nbsp;+63 998 888 7788</a>
+                            </div>
+                            <div class="footer_contact ml-4">
+                                <a href="tel:+639988887788">+63 998 888 7788</a>
+                            </div>
+                            <div class="footer_contact">
+                                <img src="assets/images/logo/email.png">
+                                <a href="">&nbsp;&nbsp;&nbsp;reservations@gohotels.ph</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="accordion-content">
+                <button class="accordion text-uppercase">
+                    Our Hotels
+                </button>
+                <div class="panel">
+                    <div class="hotels-column">
+                        
+    
+                        <div class="footer-hotels">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="footer-text"><a href="">Bacolod</a></div>
+                                  <div class="footer-text"><a href="">Butuan</a></div>
+                                  <div class="footer-text"><a href="">Dumaguete</a></div>
+                                  <div class="footer-text"><a href="">Ermita - Manila</a></div>
+                                  <div class="footer-text"><a href="">Iligan</a></div>
+                                  <div class="footer-text"><a href="">Iloilo</a></div>
+                                  <div class="footer-text"><a href="">Lanang - Davao</a></div>
+                                  <div class="footer-text"><a href="">Mandaluyong</a></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="footer-text"><a href="">Manila Airport Road</a></div>
+                                    <div class="footer-text"><a href="">North Edsa - Quezon City</a></div>
+                                    <div class="footer-text"><a href="">Ortigas Center</a></div>
+                                    <div class="footer-text"><a href="">Otis - Manila</a></div>
+                                    <div class="footer-text"><a href="">Puerto Princesa</a></div>
+                                    <div class="footer-text"><a href="">Tacloban</a></div>
+                                    <div class="footer-text"><a href="">Timog - Quezon City</a></div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="accordion text-uppercase">
+                    Company
+                </button>
+                <div class="panel">
+                    <div class="company-column">
+                        
+                        <div class="footer-hotels">
+                            <div class="footer-text"><a href="">Happy to Care</a></div>
+                            <div class="footer-text"><a href="about-us.html">About Us</a></div>
+                            <div class="footer-text"><a href="terms.html">Terms & Conditions</a></div>
+                            <div class="footer-text"><a href="policy.html">Privacy Policy</a></div>
+                            <div class="footer-text"><a href="copyright.html">Copyright</a></div>
+                            <div class="footer-text"><a href="disclaimer.html">Disclaimer</a></div>
+                            <div class="footer-text"><a href="">Contact Us</a></div>
+                            <div class="footer-text"><a href="">Careers</a></div>
+                            <div class="footer-text"><a href="">FAQs</a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Stay up to date
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="to-receive-text">To receive our newsletter please add your email address below.</div>
+                        <div class="subscribe-form">
+                            <form class="form-inline">
+                                <input type="email" placeholder="Enter your email address">
+                                <label>
+                                <button type="submit">Subscribe</button>
+                              </form>
+                        </div>
+    
+                        
+                        
+                        <div class="social-media">
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/facebook.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/twitter.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/instagram.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/youtube.png"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-language clearfix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class=col-lg-12>
+                        <div class="col-lg-10 col-xs-12">
+                            <div class="footer-copyright">
+                                ©2019 Go Hotels. All Rights Reserved.
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-xs-12">
+                            <div class="language-option">
+                                <label class="language-drpdwn">
+                                    <select class="language">
+                                        <option>English</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+            
+    </footer>
+
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

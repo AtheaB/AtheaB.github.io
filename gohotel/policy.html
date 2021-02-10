@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Go Hotels</title>
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="assets/css/zeplin.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="header-main clearfix">
+            <a href="#default" class="logo"><img src="assets/images/logo/logo.png"></a>
+            
+            <div class="header-right">
+                <a class="menu-container" onclick="openNav()"><div class="menu-text">MENU<span><i class="fe-menu"></i></span> </div></a>
+            </div>
+            <div class="header-right book-now hidden-lg hidden-md hidden-sm">
+                <a class=" menu-container2 text-uppercase" href="#home"><div class="booknow-text">book now</div></a>
+            </div>
+          </div>
+
+            <div id="myNav" class="menu-overlay">
+                <a href="javascript:void(0)" class="closebtn text-uppercase" onclick="closeNav()">Close <img src="assets/images/materials/menu-close.png"></a>
+                <a href="javascript:void(0)" class="menu-logo text-uppercase"><img class="overlay-logo" src="assets/images/logo/menu-logo.png"></a>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-mg-12">
+                            <div class="col-md-3">
+                                <div class="overlay-content clearfix">
+                                    <div class="menu-content">
+                                        <a href="#">Home <i class="fe-chevron-right"></i></a>
+                                        <a href="promo.html">Promos and Packages <i class="fe-chevron-right"></i></a>
+                                        <a href="updates.html">Updates <i class="fe-chevron-right"></i></a>
+                                        <a href="#">Happy to Care <i class="fe-chevron-right"></i></a>
+                                        <a href="blog.html">Ready? Set. Go! <i class="fe-chevron-right"></i></a>
+                                        <a href="about-us.html">About Us <i class="fe-chevron-right"></i></a>
+                                        <a href="contact-us.html">Contact Us <i class="fe-chevron-right"></i></a>
+                                        <a href="#">FAQS <i class="fe-chevron-right"></i></a>
+                                    </div>
+                                <div class="reservation-container">
+                                    <div class="reservation-text">Reservation</div>
+                                    <div class="reservation_contact">
+                                        <img class="tree-img" src="assets/images/materials/menu-tree.png">
+                                    </div>
+                                    <div class="reservation-contacts">
+                                        <div class="contact1">
+                                            <a href="tel:+639988887788">+63 998 888 7788</a>
+                                        </div>
+                                        <div class="contact2">
+                                            <a href="tel:+639178887788">+63 917-888-7788</a>
+                                        </div>
+                                        <div class="contact">
+                                            <a href="tel:+639988887788">reservations@gohotels.ph</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="container menu-hotels">
+                                <div class="menu-hotels-container col-md-9">
+                                <img class="hotels-upper-design" src="assets/images/materials/hotels-upper-design.png">
+                                <div class="menu-hotel-label text-uppercase">Hotels</div>
+
+                                <ul class="menu-hotels-list">
+                                    <li><a href="#home"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span>
+                                    </li>
+                                    <li>
+                                        <a href="#about"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li>
+                                    <li><a href="#clients"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li> 
+                                    <li><a href="#clients"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li>
+                                </ul>
+
+                                    <!-- <div class="menu-hotels-list">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Bacolod</span>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Butuan</span>    
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Dumaguete</span>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span><p>Ermita</p>
+                                                    <p>Ermita</p>
+                                                </span>
+                                                <span><div>test</div></span>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+          
+          <div class="about-us-container">
+              <div class="about-us-text text-uppercase">
+                Privacy and Policy
+              </div>
+          </div>
+
+        <div class="terms-container">
+            <p><strong>Who We Are</strong></p>
+
+<p>Robinsons Land Corporation through its Hotels and Resorts Division (referred to in this document as “RLC-RHR”, “we”, “our”, and “us”) takes your privacy seriously. We want you to be informed on how we collect, use, store, and share your Personal Information. Please take the time to read the following and learn more about our privacy policy.</p>
+
+<p><strong>Coverage of this Privacy Policy</strong></p>
+
+<p>This Privacy Policy covers RLC-RHR’s treatment of personally identifiable information that we collect when you are our customers, guests, vendors, business and service partners.&nbsp;</p>
+
+<p>This policy does not apply to the practices of companies that RLC-RHR does not own nor control, nor to people that RLC-RHR does not employ nor manage.</p>
+
+<p>As RLC-RHR franchises its brands and manages brands on behalf of the franchisees, we will share pertinent information with them in order to serve you better. Due to this, their use of your personal information will be covered by their own respective Privacy Policy unless otherwise stated specifically in this Privacy Policy and in accordance with all applicable privacy laws including the Data Privacy Act of 2012 otherwise known as Republic Act 10173.</p>
+
+<p>We will try our best to secure your privacy, no matter which RLC-RHR brand you chose to stay with.</p>
+
+<p><strong>Why is Your Data Being Collected</strong></p>
+
+<p>Generally, we collect, use and disclose your personal data for the following purposes:</p>
+
+<p>&nbsp;&nbsp; &nbsp;1. To complete your service request and purchase transaction<br />
+&nbsp;&nbsp; &nbsp;2. To respond to your queries or proposals<br />
+&nbsp;&nbsp; &nbsp;3. To handle complaints<br />
+&nbsp;&nbsp; &nbsp;4. To maintain security of our premises, projects, and events<br />
+&nbsp;&nbsp; &nbsp;5. To comply with applicable laws and regulations issued by government and regulatory bodies</p>
+
+<p>When provided:</p>
+
+<p>&nbsp;&nbsp; &nbsp;1. To improve our products and services<br />
+&nbsp;&nbsp; &nbsp;2. To provide updates on our new events, services, products and promotions that are relevant to you</p>
+
+<p><strong>How Data is Being Collected</strong></p>
+
+<p>We collect personal data from you when you:</p>
+
+<p>&nbsp;&nbsp; &nbsp;1. Purchase our products or use our services;<br />
+&nbsp;&nbsp; &nbsp;2. Visit our websites (gohotels.ph, summithotels.ph, and robinsonshotels.com);<br />
+&nbsp;&nbsp; &nbsp;3. Contact us through various methods such as application forms, e-mails and letters, telephone calls and conversations<br />
+&nbsp;&nbsp; &nbsp;4. Visit our hotels, offices, projects, and events;<br />
+&nbsp;&nbsp; &nbsp;5. Participate in customer surveys or when you sign up for any of our promotions;<br />
+&nbsp;&nbsp; &nbsp;6. We receive endorsements from your agents and business partners.</p>
+
+<p><strong>What Data is Collected</strong></p>
+
+<p>The personal information necessary in order to fulfill in a timely manner the level, type, and amount of service and product requested from us. When voluntarily provided, your contact information to be used in updating you of our events, services, products, and promotions. The personal information normally collected during the process may include the following:</p>
+
+<p>1. Your name, birth date, email address, home address, contact number, nationality, and identifying documents such as passports and any government issued ID;<br />
+2. Payment information (card and check details (for corporate accounts only), transaction numbers, origin of transaction, and mode of payment);<br />
+3. Information relating to your rewards membership that we are affiliated with (Robinsons Rewards Card and Get Go);&nbsp;<br />
+4. Information about your flight arrival and departure, stay and room type preferences, and services requested by you and provided by us;<br />
+5. Aggregated information wherein personal information is automatically collected such as IP addresses, website use, and website traffic data.</p>
+
+<p><strong>How Long is Your Data Being Retained</strong></p>
+
+<p>Subject to applicable requirements of the DPA, we will retain your personal data for us as long as necessary to fulfill the purposes for which it was collected or to comply with legal, regulatory and internal requirements.</p>
+
+<p><strong>How Your Data is Being Shared</strong></p>
+
+<p>RLC-RHR will not sell nor rent your personally identifiable information to anyone. RLC-RHR will only share personally identifiable information about you to other companies or people when:</p>
+
+<p>1. It is necessary in order to provide the product or service you have requested;<br />
+2. We respond to subpoenas, court orders or legal processes;<br />
+3. We comply with existing government and regulatory agency requirements; or<br />
+4. We find that your actions violate our Terms and Conditions, or our hotel policies for specific products and or services.</p>
+
+<p><strong>How Do We Protect Your Data</strong></p>
+
+<p>We have put in place physical, technical, and organizational measures to ensure security and confidentiality of your personal data. Access is limited to authorized employees, business and service partners who are fully trained in handling your information.</p>
+
+<p><strong>Rights of the Data Subject</strong></p>
+
+<p>RLC-RHR acknowledge your rights as data subject under the DPA. As provided thereat, the following are your rights:</p>
+
+<p>1. Right to be informed;<br />
+2. Right to access<br />
+3. Right to object;<br />
+4. Right to erasure or blocking;<br />
+5. Right to rectification;<br />
+6. Right to data portability;<br />
+7. Right to file a complaint; and<br />
+8. Right to damages.</p>
+
+<p><strong>Contact Information - Data Protection Office</strong></p>
+
+<p>Should you have any concerns regarding this Privacy Policy, our data privacy practices, your personal information or request a copy of your personal information that we have collected please contact us through:</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Data Protection Office – Robinsons Land Corporation</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Address: Level 2, Galleria Corporate Center, EDSA cor. Ortigas Ave., 1100 Quezon City</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Contact number: (632) 397 1888 / (63) 998 840 3172</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Email Address: dpo@robinsonsland.com</p>
+
+<p><strong>Changes to this Privacy Policy</strong></p>
+
+<p>We may amend this policy from time to time to comply with applicable laws and regulatory compliance. If we make any substantial changes in the way we use your personal information, we will;</p>
+
+<p>1. Notify you by posting a prominent announcement on our pages; and<br />
+2. Obtain your consent on how your personal information will be handled differently.</p>
+
+<p><strong>Disclaimers</strong></p>
+
+<p>RLC-RHR reserves the right to amend its policies, rules and regulations, Terms and Conditions, and any content;</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;1. On our websites (gohotels.ph, summithotels.ph, and robinsonshotels.com);<br />
+    &nbsp; &nbsp; &nbsp; &nbsp;2. On our forms and surveys;</p>
+
+<p class="rteindent1">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;1. While calling or visiting us;<br />
+    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;2. When you are attending or visiting us at events;<br />
+    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;3. When you are being attended to by our sales team; and<br />
+    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;4. When you use our services.</p>
+
+<p>If you do not agree to the terms and conditions of our Privacy Policy, please do not use our website, and or provide us your personal information when you call or fill out our forms.</p>
+
+        </div>
+    </div>
+        
+
+    <footer id="footerslant">
+        <div class="container partners-logo text-center hidden-xs">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner1.png">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner2.png">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner3.png">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer-container flex-container hidden-xs">
+            <div class="flex-item flex-item-1">
+                <div class="footer-row">
+                    <div class="contact-column">
+                        <div class="footer-logo">
+                            <img src="assets/images/static/go-hotel.png">
+                        </div>
+                        <div class="contact-container">
+                            <div class="footer_contact">
+                                <img class="phone-img" src="assets/images/logo/contact.png">
+                                <!-- <a href="tel:+639988887788">&nbsp;&nbsp;+63 998 888 7788</a> -->
+                            </div>
+                            <div class="footer-contacts">
+                                <div class="footer_contact ml-4 contact1">
+                                    <a href="tel:+639988887788">+63 998 888 7788</a>
+                                </div>
+                                <div class="footer_contact ml-4">
+                                    <a href="tel:+639988887788">+63 998 888 7788</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="contact-container footer-email">
+                            <div class="footer_contact">
+                                <img class="email-img" src="assets/images/logo/email.png">
+                                <a href="mailto:reservations@gohotels.ph" target="_blank">&nbsp;&nbsp;&nbsp;reservations@gohotels.ph</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item flex-item-2">
+                <div class="hotels-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Our Hotels
+                    </div>
+
+                    <div class="footer-hotels">
+                        <div class="row">
+                            <div class="col-sm-6">
+                              <div class="footer-text"><a href="">Bacolod</a></div>
+                              <div class="footer-text"><a href="">Butuan</a></div>
+                              <div class="footer-text"><a href="">Dumaguete</a></div>
+                              <div class="footer-text"><a href="">Ermita - Manila</a></div>
+                              <div class="footer-text"><a href="">Iligan</a></div>
+                              <div class="footer-text"><a href="">Iloilo</a></div>
+                              <div class="footer-text"><a href="">Lanang - Davao</a></div>
+                              <div class="footer-text"><a href="">Mandaluyong</a></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-text"><a href="">Manila Airport Road</a></div>
+                                <div class="footer-text"><a href="">North Edsa - Quezon City</a></div>
+                                <div class="footer-text"><a href="">Ortigas Center</a></div>
+                                <div class="footer-text"><a href="">Otis - Manila</a></div>
+                                <div class="footer-text"><a href="">Puerto Princesa</a></div>
+                                <div class="footer-text"><a href="">Tacloban</a></div>
+                                <div class="footer-text"><a href="">Timog - Quezon City</a></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item flex-item-3">
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Company
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="footer-text"><a href="">Happy to Care</a></div>
+                        <div class="footer-text"><a href="about-us.html">About Us</a></div>
+                        <div class="footer-text"><a href="terms.html">Terms & Conditions</a></div>
+                        <div class="footer-text"><a href="policy.html">Privacy Policy</a></div>
+                        <div class="footer-text"><a href="copyright.html">Copyright</a></div>
+                        <div class="footer-text"><a href="disclaimer.html">Disclaimer</a></div>
+                        <div class="footer-text"><a href="contact-us.html">Contact Us</a></div>
+                        <div class="footer-text"><a href="careers.html">Careers</a></div>
+                        <div class="footer-text"><a href="">FAQs</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex-item flex-item-4">
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Stay up to date
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="to-receive-text">To receive our newsletter please add your email address below.</div>
+
+                        <div class="subscribe-form">
+                            <form class="form-inline">
+                                <input type="email" placeholder="Enter your email address">
+                                <label>
+                                <button type="submit">Subscribe</button>
+                              </form>
+                        </div>
+
+                        
+                        
+                        <div class="social-media">
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/facebook.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/twitter.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/instagram.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/youtube.png"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+
+        
+        <div class="footer-accordion hidden-md hidden-lg hidden-sm">
+        
+            <div class="container partners-logo text-center">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner1.png">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner2.png">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner3.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-hrcontainer">
+                <hr class="mobile-hr">
+            </div>
+
+            <div class="container footer-mobile clearfix">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="col-xs-4">
+                            <div class="footer-logo">
+                                <img src="assets/images/static/go-hotel.png">
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="footer_contact">
+                                <img src="assets/images/logo/contact.png">
+                                <a href="tel:+639988887788">&nbsp;&nbsp;+63 998 888 7788</a>
+                            </div>
+                            <div class="footer_contact ml-4">
+                                <a href="tel:+639988887788">+63 998 888 7788</a>
+                            </div>
+                            <div class="footer_contact">
+                                <img src="assets/images/logo/email.png">
+                                <a href="">&nbsp;&nbsp;&nbsp;reservations@gohotels.ph</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="accordion-content">
+                <button class="accordion text-uppercase">
+                    Our Hotels
+                </button>
+                <div class="panel">
+                    <div class="hotels-column">
+                        
+    
+                        <div class="footer-hotels">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="footer-text"><a href="">Bacolod</a></div>
+                                  <div class="footer-text"><a href="">Butuan</a></div>
+                                  <div class="footer-text"><a href="">Dumaguete</a></div>
+                                  <div class="footer-text"><a href="">Ermita - Manila</a></div>
+                                  <div class="footer-text"><a href="">Iligan</a></div>
+                                  <div class="footer-text"><a href="">Iloilo</a></div>
+                                  <div class="footer-text"><a href="">Lanang - Davao</a></div>
+                                  <div class="footer-text"><a href="">Mandaluyong</a></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="footer-text"><a href="">Manila Airport Road</a></div>
+                                    <div class="footer-text"><a href="">North Edsa - Quezon City</a></div>
+                                    <div class="footer-text"><a href="">Ortigas Center</a></div>
+                                    <div class="footer-text"><a href="">Otis - Manila</a></div>
+                                    <div class="footer-text"><a href="">Puerto Princesa</a></div>
+                                    <div class="footer-text"><a href="">Tacloban</a></div>
+                                    <div class="footer-text"><a href="">Timog - Quezon City</a></div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="accordion text-uppercase">
+                    Company
+                </button>
+                <div class="panel">
+                    <div class="company-column">
+                        
+                        <div class="footer-hotels">
+                            <div class="footer-text"><a href="">Happy to Care</a></div>
+                            <div class="footer-text"><a href="about-us.html">About Us</a></div>
+                            <div class="footer-text"><a href="terms.html">Terms & Conditions</a></div>
+                            <div class="footer-text"><a href="policy.html">Privacy Policy</a></div>
+                            <div class="footer-text"><a href="copyright.html">Copyright</a></div>
+                            <div class="footer-text"><a href="disclaimer.html">Disclaimer</a></div>
+                            <div class="footer-text"><a href="">Contact Us</a></div>
+                            <div class="footer-text"><a href="">Careers</a></div>
+                            <div class="footer-text"><a href="">FAQs</a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Stay up to date
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="to-receive-text">To receive our newsletter please add your email address below.</div>
+                        <div class="subscribe-form">
+                            <form class="form-inline">
+                                <input type="email" placeholder="Enter your email address">
+                                <label>
+                                <button type="submit">Subscribe</button>
+                              </form>
+                        </div>
+    
+                        
+                        
+                        <div class="social-media">
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/facebook.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/twitter.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/instagram.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/youtube.png"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-language clearfix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class=col-lg-12>
+                        <div class="col-lg-10 col-xs-12">
+                            <div class="footer-copyright">
+                                ©2019 Go Hotels. All Rights Reserved.
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-xs-12">
+                            <div class="language-option">
+                                <label class="language-drpdwn">
+                                    <select class="language">
+                                        <option>English</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+            
+    </footer>
+
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

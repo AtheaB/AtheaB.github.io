@@ -1,370 +1,901 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-    	<title>Athea Bayog</title>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-    	<!-- meta -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- stylesheet -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-		<link rel="stylesheet" href="css/owl.theme.min.css">
-        <link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/main.css">
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Athea Portfolio</title>
 
-		<!-- google font -->
-        <link href='http://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
-        <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
-        <div class="content-block" id="header">
-            <div id="overlay-1">
-                <header id="site-header" class="clearfix">
-                    <div class="pull-left">
-                        <h1><a href="#">My Portfolio</a></h1>
-                    </div>
-                    <div class="pull-right">
-                        <nav class="navbar site-nav" role="navigation">
-                            <!-- Brand and toggle get grouped for better mobile display -->
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                    <i class="fa fa-bars fa-2x"></i>
-                                </button>
-                            </div>
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#header"><i class="fa fa-home"></i> <span>Home</span></a></li>
-                                    <li><a href="#portfolio"><i class="fa fa-bookmark"></i> Portfolio</a></li>
-                                    <li><a href="#services"><i class="fa fa-bullhorn"></i> Me</a></li>
-                                    <!--<li><a href="#testimonials"><i class="fa fa-thumbs-up"></i> Tetimonials</a></li>-->
-                                    <li><a href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
-                                </ul>
-                            </div>  <!-- /.navbar-collapse -->
-                        </nav>
-                    </div>
-                </header>	<!-- site-header -->
-                
-                <div class="middle text-center clearfix">
-                    <div class="container">
-                        <h1 class="pro-name">Athea <!-- <span style="color: #71b644;" > -->Bayog<!-- </span> --></h1>
-                        <p class="tagline">Frontend Developer | UI UX Designer</p>
-                        <div class="skills">
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
-                        </div>  <!-- skills -->
-                        <a href="#contact" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn">Hire Me</a>
-                    </div>  <!-- container -->
-                </div>  <!-- middle -->
-                
-                <div class="bottom text-center">
-                    <a href="#portfolio"><i class="fa fa-angle-down fa-3x pulse"></i></a>
-                </div>
-            </div>  <!-- overlay-1 -->
-        </div>  <!-- content-block -->
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
-        <div class="content-block text-center" id="portfolio">
-            <header class="block-heading cleafix">
-                <h1>Latest Works</h1>
-                <!-- <p>Take a look at some of my recent products</p> -->
-            </header>
+   <!-- favicons
+	================================================== -->
+	<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
 
-            <div class="isotope portfolio-items">
-                <div class="element-item grid">
-                    <div class="effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work1.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">View <span>Work</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work2.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">View <span>Work</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work3.png">
-                        <figcaption>
-                            <h2 class="hidden-xs">View <span>Work</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work7.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">View <span>Work</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work8.png">
-                        <figcaption>
-                            <h2 class="hidden-xs">View <span>Work</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work4.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">View <span>Work</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work5.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">View <span>Work</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work6.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">View <span>Work</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-            </div>	<!-- isotope portfolio-items -->
-            <a href="#" class="btn btn-lg btn-view">
-                <i class="fa fa-eye"></i>
-                <span>View All</span>
-            </a>
-        </div>  <!-- content-block -->
+</head>
 
-       <!--  <div class="content-block text-center" id="services">
-            <div class="overlay-2">
-                        <header class="block-heading cleafix">
-                            <h1>More About Me</h1>
-                            <p>Lorem Ipsum Text</p>
-                        </header>
-                        <div class="block-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                <div class="row ">
-                                    <div class="col-sm-4">
-                                        <h4 class="pro-stat">Completed Project</h4>
-                                        <h2 class="proj-name count1 count-timer" >020</h2>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <h4 class="pro-stat">Working Project</h4>
-                                        <h2 class="proj-name count2">9</h2>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <h4 class="pro-stat">Top Rated Project</h4>
-                                        <h2 class="proj-name count3">015</h2>
-                                    </div>
-                                </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    overlay-2
-        </div>  --> <!-- content-block -->
-        <div id="services" class="content-block">
-            <div id="numbers" class="parallax">
-                <div class="overlay">
-                    <!-- title -->
-                    <div class="container-fluid numbers-title">
-                        <div class="container">
-                            <div class="row block-heading">
-                                <h1>Some Cool Facts About Me</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <!-- number list -->
-                        <ul class="numbersList">
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Conferences </h4>
-                                <span id="number1" class="count1 count-timer">101</span>
-                            </li>
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Lines of Code</h4>
-                                <span id="number2" class="count2">92</span>
-                            </li>
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Hours of Work</h4>
-                                <span id="number3"  class="count3">54</span>
-                            </li>
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Repositories in Git</h4>
-                                <span id="number4" class="count4">99</span>
-                            </li>
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Mobile APP</h4>
-                                <span id="number5" class="count5">124</span>
-                            </li>
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Happy Client </h4>
-                                <span id="number6" class="count6">45</span>
-                            </li>
-                        </ul><!-- numbersList end -->
-                    </div><!-- container-fluid end -->
-                </div><!-- overlay end -->
-            </div>
-        </div>
-            
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <a href="index.html">Home</a>
+		      </div>		      
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<h5>Hello, World.</h5>
+	   			<h1>I'm Athea Bayog.</h1>
+
+	   			<p class="intro-position">
+	   				<span>Front-end Developer</span>
+					<span>UI Developer</span> 
+					<span>Web Designer</span> 
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">Know More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+        <li><a href="https://www.facebook.com/athea.bayog/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="https://www.instagram.com/theanggulo/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
 
 
-        <div class="content-block" id="contact">
-            <div class="overlay-3">
-                <header class="block-heading cleafix text-center">
-                    <h1>Contact</h1>
-                    <!-- <p>Feel Free to Contact</p> -->
-                </header>
-                <div class="block-content text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 wow animated fadeInLeft">
-                                <form class="contact-form" action="form.php">
-                                    <input type="text" name="name" placeholder="Name" required>
-                                    <input type="email" name="email" placeholder="Email" required>
-                                    <textarea rows="5" name="message" placeholder="Say Something..." required></textarea>
-                                    <input type="submit" value="Submit">
-                                </form>
-                            </div>
-                            <div class="col-md-6 wow animated fadeInRight">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="contact-info">
-                                            <div class="clearfix">
-                                                <div class="rotated-icon">
-                                                    <div class="sqaure-nebir"></div>
-                                                    <i class="fa fa-map-marker"></i>
-                                                </div>
-                                                <p><strong> Address:</strong> 24 Acacia St Brgy. Cembo Makati City
-                                                </p>
-                                            </div>
-                                            <div class="clearfix">
-                                                <div class="rotated-icon">
-                                                    <div class="sqaure-nebir"></div>
-                                                    <i class="fa fa-mobile"></i>
-                                                </div>
-                                                <p><strong> Cell No:</strong> +63955 6925 732</p>
-                                            </div>
-                                            <div class="clearfix">
-                                                <div class="rotated-icon">
-                                                    <div class="sqaure-nebir"></div>
-                                                    <i class="fa fa-envelope-o"></i>
-                                                </div>
-                                                <p>
-                                                    <strong> Email:</strong> bayogathea0511@gmail.com
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <ul class="social-box">
-                                        <li><a class="facebook-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="twitter-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="g-plus-icon" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a class="linkedin-icon" href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>	<!-- block-content -->
-            </div>	<!-- overlay-3 -->
-        </div>	<!-- content-block -->
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
 
-        <!-- js -->
-        <script>
-            new WOW().init();
-        </script>
+   	<div class="row section-intro">
+   		<div class="col-twelve">
 
-        <script src="js/jquery-2.1.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.actual.min.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.isonscreen.js"></script>
-       
-        <script src="js/main.js"></script>
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
 
-        <script>
-        	$(document).ready(function(){
-  				$('.owl-carousel').owlCarousel({
-    				loop:true,
-    				margin:10,
-    				autoplay:true,
-    				autoplayTimeout:3000,
-    				autoplayHoverPause:true,
-    				responsiveClass:true,
-    				responsive:{
-        					0:{
-					            items:1,
-        					},
-					        600:{
-					            items:1,
-					        },
-					        1000:{
-					            items:1,
-					        }
-    				}
-				})
-			});
-        </script>
+   			<div class="intro-info">
 
-	</body>
+   				<img src="images/profile-pic.jpeg" alt="Profile Picture">
+
+   				<p class="lead">I've been more than 2years in IT Industry. I graduated last June 2018 at Bulacan State University, I took up Bachelor of Science in Information Technology. I love creativity specially when it comes in designing and building a website.</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>Professionally, I am multi-tasker, trustworthy, competent and hard-working person. I can work under
+				pressure without sacrificing productivity and efficiency. I promote empowerment, team work, dedication, sense of responsibility and reliability.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Athea Euraba Bayog</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>May 11, 1997</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Freelancer, Frontend Developer, UI/UX Designer</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span></span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>bayogathea0511@gmail.com</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p>Knowledgeable in using
+				VueJs, Bootstrap, Adobe
+				Suits, MySQL, Eclipse, Visual Basic, Netbeans
+				IDE, Visual Studio Code, Android Studio, Drupal
+				Content Management System.</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent100"><span>100%</span></div>
+				   	<strong>HTML5</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent100"><span>100%</span></div>
+				   	<strong>CSS3</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>Bootstrap</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>JavaScript</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>CMS</strong>
+				   </li>
+				   <li>
+					<div class="progress percent95"><span>95%</span></div>
+					<strong>Photoshop</strong>
+				</li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   			<a href="cv/AtheaBayog_CV.pdf" target="_blank" title="Download CV" class="button button-primary">Download CV</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead">Please check out my credentials listed below. I included my education, work experience and portfolio for you to know me more.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor Degree</h3>
+	   					<p>June 2014 - June 2018</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Bulacan State University</h4>
+	   					<p>I took up Bachelor of Science in Information Technology.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+						<h3>Front-end Developer/ <br>	
+							UI Developer</h3>
+						<p>November 2019 - November 2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>ITech Global Business Solutions, Inc.</h4>
+	   					<p>Task and Responsibilities: <br>
+							◉ Determining the structure and design of web pages. <br>
+							◉ Ensuring user experience determines design choices and ensuring the responsiveness of the
+							website in all screen sizes. <br>
+							◉ Provide design and prototype base on clients requirements and translate it to codes. <br>
+							◉ Developing features to enhance the user experience. <br>
+							◉ Ensuring web design is optimized for smartphones. <br>
+							◉ Building reusable code for future use. <br>
+							◉ Manage contents of a website using Drupal Management Content System. <br>
+							PROJECT HANDLED:<br>
+							◉ Go Hotels Website<br>
+							◉ Summit Hotels and Resorts Website<br>
+							◉ E-Learning Management System</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Jr. Front-end Developer</h3>
+	   					<p>March 2019 - August 2019</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Zigzag Media Inc.</h4>
+	   					<p>Task and Responsibilities: <br>
+							◉ Responsible to build a book using html file that will be uploaded to Sitepoint website library. <br>
+							◉ Enhance the book building tool depends on what it requires.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Freelancer</h3>
+	   					<p>2018 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Part Time Freelancer</h4>
+	   					<p>I am accepting freelance when I do not have a permanent and stable job to have an extra income. I am designing my clients website and accepting a project base jobs.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+   		</div>   		
+   		</div> <!-- /section-intro--> 
+
+		<!--Website Development-->
+
+		<div class="web_development">
+			<div class="row portfolio_div">
+				<h1>Website Development</h1>
+				<div class="column">
+					<div class="card websites">
+						<a href="https://www.summithotels.ph/" target="_blank">
+							<img src="images/portfolio/summit.jpg" alt="Summit Hotels">
+							<div class="container">
+							<h4><b>Summit Hotels and Resorts</b></h4> 
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card websites">
+						<a href="gohotel/home.html" target="_blank">
+							<img src="images/portfolio/gohotels.jpg" alt="Gohotels">
+							<div class="container">
+							<h4><b>Gohotels</b></h4> 
+							</div>
+						</a>
+					</div>
+				</div>
+				</div>
+		
+				<div class="row">
+					<div class="column">
+						<div class="card websites">
+							<a href="philtech/web/index.html" target="_blank">
+								<img src="images/portfolio/philtech.jpg" alt="Philtech">
+								<div class="container">
+								<h4><b>Philtech</b></h4> 
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="card websites">
+							<a href="BBSI/index.html" target="_blank">
+								<img src="images/portfolio/bbsi.jpg" alt="BBSI">
+								<div class="container">
+								<h4><b>BAPTIST BIBLE SEMINARY & INSTITUTE</b></h4> 
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<!--//Website Development-->
+
+
+		<!--Website Design-->
+		<div class="web_development">
+			<div class="row portfolio_div">
+				<h1>Website Design</h1>
+				
+				<div class="">
+					<div class="column">
+						<div class="card websites">
+							<a href="images/portfolio/onlineshop.png">
+								<img src="images/portfolio/onlineshop2.jpg" alt="Philtech">
+								<div class="container">
+								<h4><b>online shop</b></h4> 
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="card websites">
+							<a href="images/portfolio/travelers.png">
+								<img src="images/portfolio/travelers2.jpg" alt="Philtech">
+								<div class="container">
+								<h4><b>travelers</b></h4> 
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card websites">
+						<a href="images/portfolio/lahotel-view.png">
+							<img src="images/portfolio/lahotel.png" alt="Summit Hotels">
+							<div class="container">
+							  <h4><b>La Hotel</b></h4> 
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card websites">
+						<a href="images/portfolio/goodfood-view.png">
+							<img src="images/portfolio/goodfood.png" alt="Gohotels">
+							<div class="container">
+							<h4><b>The Restau</b></h4> 
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//Website Design-->
+
+		<!--Branding Design-->
+		<div class="web_development">
+			<div class="row portfolio_div">
+				<h1>Branding</h1>
+				<div class="column">
+					<div class="card websites">
+						<img src="images/portfolio/8layer.jpg" alt="8 Layer">
+						<div class="container">
+						  <h4><b>8 Layer Technologies Inc. Company Profile</b></h4> 
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card websites">
+						<img src="images/portfolio/maralabs.jpg" alt="Gohotels">
+						<div class="container">
+						  <h4><b>MaraLabs, Inc.</b></h4> 
+						</div>
+					</div>
+				</div>
+				</div>
+		
+				<div class="row">
+					<div class="column">
+						<div class="card websites">
+							<img src="images/portfolio/8layer_logo.jpg" alt="Philtech">
+							<div class="container">
+							  <h4><b>Company Logo</b></h4> 
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="card websites">
+							<img src="images/portfolio/gvtech.jpg" alt="BBSI">
+							<div class="container">
+							  <h4><b>Campany logo</b></h4> 
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a class="click-here" href="images/portfolio/ATHEA-portfolio.pdf" target="_blank">
+					<h4>click here to view more of my portfolio</h4>
+				</a>
+		</div>
+		<!--//Branding Design-->
+
+
+	   <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+
+	
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Services</h5>
+   			<h1>What Can I Do For You?</h1>
+
+   			<p class="lead">I am a Freelancer and I'd love to talk to you if you are interested working with me.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">	
+
+	      		<span class="icon"><i class="icon-earth"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>Webdesign</h3>
+
+		            <p class="desc">We design and develop dynamic and static,ecommerce & portal websites based on your priorities. Our services won't end only with website design & development we also offer ongoing Digital Marketing Services for your Business. The designs we create are responsive in all devices and are search engine friendly to successfully dominate the market.
+	         		</p>
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service -->
+
+				<div class="service">	
+
+					<span class="icon"><i class="icon-window"></i></span>                          
+
+	            <div class="service-content">	
+
+	            	<h3>Web Development</h3>  
+
+		            <p class="desc">We have a strategic approach in developing your web pages. We value each and every element and think 3-4 times before adding the single design element because we know great design offers valuable insights. Your web design will be as unique as your company vision. Our aim is to create a aha moments when they view your website.
+	         		</p>
+
+	            </div>	                          
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-paint-brush"></i></span>		            
+
+	            <div class="service-content">
+
+	            	<h3>Branding</h3>
+
+		            <p class="desc">We design and develop creative concepts to engage your customers online. We tell your Brand’s story through visually appealing graphics. As we all know visually appealing concepts are winning the digital world. We craft your imagination to the elegant graphics.
+	        			</p> 
+
+	            </div> 	            	               
+
+			   </div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-toggles"></i></span>	              
+
+	            <div class="service-content">
+
+	            	<h3>UI/UX Design</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         		</p> 
+	         		
+	            </div>                
+
+				</div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-image"></i></span>	            
+
+	            <div class="service-content">
+
+	            	<h3>Graphics Design</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
+
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-chat"></i></span>	   	           
+
+	            <div class="service-content">
+
+	            	 <h3>Consultancy</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
+	        			
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+	      </div> <!-- /services-list -->
+   		
+   	</div> <!-- /services-content -->
+		
+	</section> <!-- /services -->	
+
+
+	<!-- stats Section
+   ================================================== -->
+	<section id="stats" class="count-up">
+
+		<div class="row">
+			<div class="col-twelve">
+
+				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-pencil-ruler"></i>
+						</div>
+
+						<h3 class="stat-count">
+							70
+						</h3>
+
+						<h5 class="stat-title">
+							Projects Completed
+						</h5>
+
+					</div> <!-- /stat -->					
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-users"></i>
+						</div>
+
+						<h3 class="stat-count">
+							50
+						</h3>
+
+						<h5 class="stat-title">
+							Happy Clients
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-badge"></i>
+						</div>
+
+						<h3 class="stat-count">
+							10
+						</h3>
+
+						<h5 class="stat-title">
+							Awards Received
+						</h5>
+
+					</div> <!-- /stat -->									
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-light-bulb"></i>
+						</div>
+
+						<h3 class="stat-count">
+							300
+						</h3>
+
+						<h5 class="stat-title">
+							Crazy Ideas
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-cup"></i>
+						</div>
+
+						<h3 class="stat-count">
+							500
+						</h3>
+
+						<h5 class="stat-title">
+							Coffee Cups
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-clock"></i>
+						</div>
+
+						<h3 class="stat-count">
+							1000
+						</h3>
+
+						<h5 class="stat-title">
+							Hours
+						</h5>
+
+					</div> <!-- /stat -->
+
+				</div> <!-- /stats-list -->
+
+			</div> <!-- /twelve -->
+		</div> <!-- /row -->
+
+	</section> <!-- /stats -->
+
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   			<p class="lead">Please feel free to contact me.</p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-form">
+
+   		<div class="col-twelve">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
+
+                  <div class="form-field">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div class="form-field">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div>                       
+                  <div class="form-field">
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>                      
+                 <div class="form-field">
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning">            	
+            </div>            
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+      		</div>
+
+         </div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /contact-form -->
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+            0539 Purok 4<br>
+            Barangay Tibig Bulakan,<br>
+            Bulacan 3017
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>bayogathea0511@gmail.com<br>		     
+			   </p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>
+			   	Mobile: (+639) 556925732<br>
+			     (+639) 5493017120
+			   </p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+			      <li><a href="https://www.facebook.com/athea.bayog/"><i class="fa fa-facebook"></i></a></li>
+			      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			      <li><a href="https://www.instagram.com/theanggulo/"><i class="fa fa-instagram"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright Athea Bayog.</span>          	
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
 </html>

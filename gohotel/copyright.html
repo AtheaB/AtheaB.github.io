@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Go Hotels</title>
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="assets/css/zeplin.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="header-main clearfix">
+            <a href="#default" class="logo"><img src="assets/images/logo/logo.png"></a>
+            
+            <div class="header-right">
+                <a class="menu-container" onclick="openNav()"><div class="menu-text">MENU<span><i class="fe-menu"></i></span> </div></a>
+            </div>
+            <div class="header-right book-now hidden-lg hidden-md hidden-sm">
+                <a class=" menu-container2 text-uppercase" href="#home"><div class="booknow-text">book now</div></a>
+            </div>
+          </div>
+
+            <div id="myNav" class="menu-overlay">
+                <a href="javascript:void(0)" class="closebtn text-uppercase" onclick="closeNav()">Close <img src="assets/images/materials/menu-close.png"></a>
+                <a href="javascript:void(0)" class="menu-logo text-uppercase"><img class="overlay-logo" src="assets/images/logo/menu-logo.png"></a>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-mg-12">
+                            <div class="col-md-3">
+                                <div class="overlay-content clearfix">
+                                    <div class="menu-content">
+                                        <a href="#">Home <i class="fe-chevron-right"></i></a>
+                                        <a href="promo.html">Promos and Packages <i class="fe-chevron-right"></i></a>
+                                        <a href="updates.html">Updates <i class="fe-chevron-right"></i></a>
+                                        <a href="#">Happy to Care <i class="fe-chevron-right"></i></a>
+                                        <a href="blog.html">Ready? Set. Go! <i class="fe-chevron-right"></i></a>
+                                        <a href="about-us.html">About Us <i class="fe-chevron-right"></i></a>
+                                        <a href="contact-us.html">Contact Us <i class="fe-chevron-right"></i></a>
+                                        <a href="#">FAQS <i class="fe-chevron-right"></i></a>
+                                    </div>
+                                <div class="reservation-container">
+                                    <div class="reservation-text">Reservation</div>
+                                    <div class="reservation_contact">
+                                        <img class="tree-img" src="assets/images/materials/menu-tree.png">
+                                    </div>
+                                    <div class="reservation-contacts">
+                                        <div class="contact1">
+                                            <a href="tel:+639988887788">+63 998 888 7788</a>
+                                        </div>
+                                        <div class="contact2">
+                                            <a href="tel:+639178887788">+63 917-888-7788</a>
+                                        </div>
+                                        <div class="contact">
+                                            <a href="tel:+639988887788">reservations@gohotels.ph</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="container menu-hotels">
+                                <div class="menu-hotels-container col-md-9">
+                                <img class="hotels-upper-design" src="assets/images/materials/hotels-upper-design.png">
+                                <div class="menu-hotel-label text-uppercase">Hotels</div>
+
+                                <ul class="menu-hotels-list">
+                                    <li><a href="#home"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span>
+                                    </li>
+                                    <li>
+                                        <a href="#about"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li>
+                                    <li><a href="#clients"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li> 
+                                    <li><a href="#clients"><img src="assets/images/menu/bacolod.png">
+                                        <span>Bacolod</span></a>
+                                    </li>
+                                </ul>
+
+                                    <!-- <div class="menu-hotels-list">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Bacolod</span>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Butuan</span>    
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span>Dumaguete</span>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <img src="assets/images/menu/bacolod.png">
+                                                <span><p>Ermita</p>
+                                                    <p>Ermita</p>
+                                                </span>
+                                                <span><div>test</div></span>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+          
+          <div class="about-us-container">
+              <div class="about-us-text text-uppercase">
+                Copyright
+              </div>
+          </div>
+
+        <div class="terms-container">
+            <p><strong>
+                Copyright</strong></p>
+            <p>Please read this notice carefully. It regulates your use of the site and all material within it. General access to and use of this Robinsons Land Corporation site is subject to the following terms and conditions.</p>
+                
+                <p>Copyright © Robinsons Land Corporation. All rights reserved. All copyright and other intellectual property rights in all text, images, sound, software and other materials on this site are owned by Robinsons Land and affiliated companies or are included with permission of the relevant owner. References to affiliates or affiliated companies shall include all members of the Robinsons Land Corporation Group.</p>
+                
+                <p>You are permitted to browse this site and to reproduce extracts by way of printing, downloading to a hard disk and by distribution to other people but, in all cases, for non-commercial, informational and personal purposes only. No reproduction of any part of the site may be sold or distributed for commercial gain nor shall it be modified or incorporated in any other work, publication or site, whether in hard copy or electronic format, including posting to any other site. No other license or right is granted.</p>
+            </p>
+            <p><strong>
+                Trademarks</strong></p>
+            <p>
+            All trademarks displayed on this site are either owned or used under license by Robinsons Land Corporation and affiliates.</p>
+
+            <p>The information on this site has been included in good faith but is for general informational purposes only. It should not be relied on for any specific purpose and no representation or warranty is given as regards its accuracy or completeness. The price of shares and the income derived from them can go down as well as up and investors may not get back the amount originally invested. Past performance is not necessarily a guide to future performance. Neither Robinsons Land Corporation nor any affiliates nor their or their affiliates' officers, employees or agents shall be liable for any loss, damage or expense arising out of any access to or use of this site or any site linked to it including, without limitation, any loss of profit, indirect, incidental or consequential loss.
+            </p>
+            <p><strong>
+                Privacy Notice</strong></p>
+            <p>
+                Collection and Use of Personal Information</p>
+
+            <p>
+                The information which we collect and store during normal use of the site is used to monitor use of the site and to help its further development. Such use does not result in any personally identifiable data being collected or stored.</p>
+
+            <p>
+                A number of pages in this website give you the option to submit personal information to Robinsons Land Corporation and its affiliates. All such communications are not confidential. These pages contain explanations of how the information you submit to us using this website will be used. In connection with any application, request or inquiry you make, such information may be passed or made available to Robinsons Land Corporation some of which will be based in countries that do not have data protection laws. Robinsons Land Corporation is required to comply with an internal Privacy Policy which requires that steps are taken to protect your personal information and for it only to be used for the purpose(s) for which it was submitted.
+            </p>
+            <p>
+                If you have submitted personal information through this website and wish us to cease using it for the purposes submitted, please contact <a href="#">customer.care@robinsonsland.com.</a></p>
+        
+
+        </div>
+
+    </div>
+        
+
+    <footer id="footerslant">
+        <div class="container partners-logo text-center hidden-xs">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner1.png">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner2.png">
+                    <img class="img-responsive partners_image" src="assets/images/logo/partner3.png">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer-container flex-container hidden-xs">
+            <div class="flex-item flex-item-1">
+                <div class="footer-row">
+                    <div class="contact-column">
+                        <div class="footer-logo">
+                            <img src="assets/images/static/go-hotel.png">
+                        </div>
+                        <div class="contact-container">
+                            <div class="footer_contact">
+                                <img class="phone-img" src="assets/images/logo/contact.png">
+                                <!-- <a href="tel:+639988887788">&nbsp;&nbsp;+63 998 888 7788</a> -->
+                            </div>
+                            <div class="footer-contacts">
+                                <div class="footer_contact ml-4 contact1">
+                                    <a href="tel:+639988887788">+63 998 888 7788</a>
+                                </div>
+                                <div class="footer_contact ml-4">
+                                    <a href="tel:+639988887788">+63 998 888 7788</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="contact-container footer-email">
+                            <div class="footer_contact">
+                                <img class="email-img" src="assets/images/logo/email.png">
+                                <a href="mailto:reservations@gohotels.ph" target="_blank">&nbsp;&nbsp;&nbsp;reservations@gohotels.ph</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item flex-item-2">
+                <div class="hotels-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Our Hotels
+                    </div>
+
+                    <div class="footer-hotels">
+                        <div class="row">
+                            <div class="col-sm-6">
+                              <div class="footer-text"><a href="">Bacolod</a></div>
+                              <div class="footer-text"><a href="">Butuan</a></div>
+                              <div class="footer-text"><a href="">Dumaguete</a></div>
+                              <div class="footer-text"><a href="">Ermita - Manila</a></div>
+                              <div class="footer-text"><a href="">Iligan</a></div>
+                              <div class="footer-text"><a href="">Iloilo</a></div>
+                              <div class="footer-text"><a href="">Lanang - Davao</a></div>
+                              <div class="footer-text"><a href="">Mandaluyong</a></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-text"><a href="">Manila Airport Road</a></div>
+                                <div class="footer-text"><a href="">North Edsa - Quezon City</a></div>
+                                <div class="footer-text"><a href="">Ortigas Center</a></div>
+                                <div class="footer-text"><a href="">Otis - Manila</a></div>
+                                <div class="footer-text"><a href="">Puerto Princesa</a></div>
+                                <div class="footer-text"><a href="">Tacloban</a></div>
+                                <div class="footer-text"><a href="">Timog - Quezon City</a></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item flex-item-3">
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Company
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="footer-text"><a href="">Happy to Care</a></div>
+                        <div class="footer-text"><a href="about-us.html">About Us</a></div>
+                        <div class="footer-text"><a href="terms.html">Terms & Conditions</a></div>
+                        <div class="footer-text"><a href="policy.html">Privacy Policy</a></div>
+                        <div class="footer-text"><a href="copyright.html">Copyright</a></div>
+                        <div class="footer-text"><a href="disclaimer.html">Disclaimer</a></div>
+                        <div class="footer-text"><a href="contact-us.html">Contact Us</a></div>
+                        <div class="footer-text"><a href="careers.html">Careers</a></div>
+                        <div class="footer-text"><a href="">FAQs</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex-item flex-item-4">
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Stay up to date
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="to-receive-text">To receive our newsletter please add your email address below.</div>
+
+                        <div class="subscribe-form">
+                            <form class="form-inline">
+                                <input type="email" placeholder="Enter your email address">
+                                <label>
+                                <button type="submit">Subscribe</button>
+                              </form>
+                        </div>
+
+                        
+                        
+                        <div class="social-media">
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/facebook.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/twitter.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/instagram.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/youtube.png"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+
+        
+        <div class="footer-accordion hidden-md hidden-lg hidden-sm">
+        
+            <div class="container partners-logo text-center">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner1.png">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner2.png">
+                        <img class="img-responsive partners_image" src="assets/images/logo/partner3.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-hrcontainer">
+                <hr class="mobile-hr">
+            </div>
+
+            <div class="container footer-mobile clearfix">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="col-xs-4">
+                            <div class="footer-logo">
+                                <img src="assets/images/static/go-hotel.png">
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="footer_contact">
+                                <img src="assets/images/logo/contact.png">
+                                <a href="tel:+639988887788">&nbsp;&nbsp;+63 998 888 7788</a>
+                            </div>
+                            <div class="footer_contact ml-4">
+                                <a href="tel:+639988887788">+63 998 888 7788</a>
+                            </div>
+                            <div class="footer_contact">
+                                <img src="assets/images/logo/email.png">
+                                <a href="">&nbsp;&nbsp;&nbsp;reservations@gohotels.ph</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="accordion-content">
+                <button class="accordion text-uppercase">
+                    Our Hotels
+                </button>
+                <div class="panel">
+                    <div class="hotels-column">
+                        
+    
+                        <div class="footer-hotels">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="footer-text"><a href="">Bacolod</a></div>
+                                  <div class="footer-text"><a href="">Butuan</a></div>
+                                  <div class="footer-text"><a href="">Dumaguete</a></div>
+                                  <div class="footer-text"><a href="">Ermita - Manila</a></div>
+                                  <div class="footer-text"><a href="">Iligan</a></div>
+                                  <div class="footer-text"><a href="">Iloilo</a></div>
+                                  <div class="footer-text"><a href="">Lanang - Davao</a></div>
+                                  <div class="footer-text"><a href="">Mandaluyong</a></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="footer-text"><a href="">Manila Airport Road</a></div>
+                                    <div class="footer-text"><a href="">North Edsa - Quezon City</a></div>
+                                    <div class="footer-text"><a href="">Ortigas Center</a></div>
+                                    <div class="footer-text"><a href="">Otis - Manila</a></div>
+                                    <div class="footer-text"><a href="">Puerto Princesa</a></div>
+                                    <div class="footer-text"><a href="">Tacloban</a></div>
+                                    <div class="footer-text"><a href="">Timog - Quezon City</a></div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="accordion text-uppercase">
+                    Company
+                </button>
+                <div class="panel">
+                    <div class="company-column">
+                        
+                        <div class="footer-hotels">
+                            <div class="footer-text"><a href="">Happy to Care</a></div>
+                            <div class="footer-text"><a href="about-us.html">About Us</a></div>
+                            <div class="footer-text"><a href="terms.html">Terms & Conditions</a></div>
+                            <div class="footer-text"><a href="policy.html">Privacy Policy</a></div>
+                            <div class="footer-text"><a href="copyright.html">Copyright</a></div>
+                            <div class="footer-text"><a href="disclaimer.html">Disclaimer</a></div>
+                            <div class="footer-text"><a href="">Contact Us</a></div>
+                            <div class="footer-text"><a href="">Careers</a></div>
+                            <div class="footer-text"><a href="">FAQs</a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="company-column">
+                    <div class="footer-title text-uppercase text-left">
+                        Stay up to date
+                    </div>
+                    <div class="footer-hotels">
+                        <div class="to-receive-text">To receive our newsletter please add your email address below.</div>
+                        <div class="subscribe-form">
+                            <form class="form-inline">
+                                <input type="email" placeholder="Enter your email address">
+                                <label>
+                                <button type="submit">Subscribe</button>
+                              </form>
+                        </div>
+    
+                        
+                        
+                        <div class="social-media">
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/facebook.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/twitter.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/instagram.png"></a>
+                            <a class="fa-social-link" target="_blank" href="#"><img src="assets/images/materials/youtube.png"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-language clearfix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class=col-lg-12>
+                        <div class="col-lg-10 col-xs-12">
+                            <div class="footer-copyright">
+                                ©2019 Go Hotels. All Rights Reserved.
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-xs-12">
+                            <div class="language-option">
+                                <label class="language-drpdwn">
+                                    <select class="language">
+                                        <option>English</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+            
+    </footer>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

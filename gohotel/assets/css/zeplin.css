@@ -1,0 +1,1682 @@
+:root {
+  --orange: #f37021;
+  --emerald: #00a84f;
+  --shamrock-green: #04c860;
+  --black: #343434;
+  --light-grey: #cacaca;
+  --off-white: #fffaeb;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/****************
+HEADER
+*****************/
+
+.header-main {
+  overflow: hidden;
+  height: 70px;
+  box-shadow: 0 1px 5px 0 #e8d0c1;
+  background-color: var(--orange);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-main .header-right a{
+  float: left;
+  text-align: center;
+  width: 164px;
+  height: 50px;
+  border-radius: 25px;
+  background-image: linear-gradient(164deg, var(--shamrock-green) 20%, var(--emerald) 76%);
+  cursor: pointer;
+}
+
+.header-main .header-right a:hover{
+  text-decoration: none;
+  background-color: #038741; 
+  background-image: unset;
+}
+
+.menu-container{
+  margin: 10px;
+}
+
+.menu-container .menu-text{
+  margin: 10px 5px 10px 24px;
+  width: 81px;
+  height: 30px;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu-container .menu-text i{
+  margin-left: 14px;
+}
+
+.header-main img {
+  width: 61px;
+  height: 63px;
+  object-fit: contain;
+  margin: 4px 0 3px 9px;
+}
+
+/* .header-main a:hover {
+background-color: #ddd;
+color: black;
+} */
+
+
+.header-main .header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+/****************
+MENU OVERLAY
+*****************/
+.menu-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  /* background-image: linear-gradient(330deg, #ffcb05 107%, var(--orange) 70%, var(--orange) 70%); */
+  background: linear-gradient(150deg, rgba(243,112,33,1) 70%, rgba(243,112,33,1) 70%, rgba(255,203,5,1) 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 54px;
+}
+
+.menu-overlay .menu-content a {
+  width: 323px;
+  font-family: Semringah;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.04;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  margin: 0 0 0 15px;
+  border-bottom: 0.5px dashed #ffdac3;
+  padding-left: 15px;
+}
+
+.menu-overlay a:hover, .menu-overlay a:focus {
+  color: #f1f1f1;
+}
+
+.menu-overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-family: Semringah;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.43px;
+  color: #ffffff;
+}
+.reservation-text{
+  font-family: Montserrat;
+  font-size: 19px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin: 31px 0 19px 0;
+}
+.tree-img{
+  width: 73px;
+  height: 60px;
+}
+.reservation-contacts a{
+  font-family: Montserrat;
+  font-size: 14px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 1.17px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.reservation-contacts {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  margin: -70px 0 0 98px;
+}
+.menu-hotel-label{
+  font-family: Semringah;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.52;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+}
+.menu-hotels .col-xs-3 span, .menu-hotels span{
+  font-family: Semringah;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.42px;
+  color: #ffffff;
+  margin-left: 12px;
+}
+.menu-hotels .col-xs-3 span:after, .menu-hotels span:after {
+  content: " ";
+  display: block;
+  background-image: url(../images/menu/paint.png);
+  width: 130px;
+  height: 18px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 20px;
+  margin-left: 45px;
+}
+
+/****************
+HOMEPAGE
+*****************/
+.homepage-booknow-text{
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+.check-rates a {
+  width: 300px;
+  height: 52px;
+  border-radius: 30px;
+  background-image: linear-gradient(154deg, var(--shamrock-green) 31%, var(--emerald) 63%);
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.check-rates a{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.hotel-check-rates a {
+  width: 300px;
+  height: 52px;
+  border-radius: 30px;
+  background-color: var(--orange);
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.hotel-check-rates a{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.hotels-map-text{
+  width: 111px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: var(--emerald);
+}
+.hotels-map-text:hover{
+  color: black;
+}
+.about-go-text{
+  font-family: Semringah;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--emerald);
+}
+.hotel-mapsvg-title{
+  font-family: Semringah;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--orange);
+}
+.hotel-mapsvg-desctription{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 0.93px;
+  text-align: center;
+  color: var(--black);
+}
+.about-hotel-details{
+  width: 497px;
+  /* height: 298px; */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 1.07px;
+  text-align: center;
+  color: var(--black);
+}
+.happytocare-title{
+  width: 73px;
+  height: 26px;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.63px;
+  color: var(--orange);
+}
+.hatoca-title{
+  font-family: Semringah;
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 3px;
+  color: var(--black);
+}
+.hatoca-description{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.hatoca-button a {
+  width: 120px;
+  height: 35px;
+  background-color: var(--orange);
+  border-radius: 17.5px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.hatoca-button a{
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-align: center;
+  color: #ffffff;
+}
+.hatoca-button a:hover{
+  background-color: #DD6116;
+  text-decoration: none;
+}
+.happytocare-services-text{
+  width: 77px;
+  height: 26px;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.63px;
+  color: var(--orange);
+}
+.view-more-stories a {
+  width: 345px;
+  height: 52px;
+  border-radius: 30px;
+  border: solid 1px var(--orange);
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.view-more-stories a{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--orange);
+}
+.homepage-promo-packages-text{
+  font-family: Semringah;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--orange);
+}
+.homepage-promo-packages-description{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: 1.07px;
+  text-align: center;
+  color: var(--black);
+}
+.homepage-updates-text{
+  font-family: Semringah;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+}
+.homepage-updates{
+  height: 649px;
+  background-color: #da8049;
+}
+.homepage-update-list .updates-title a{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.homepage-update-list .updates-details {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.17px;
+  color: #ffffff;
+}
+.homepage-update-list .updates-details a {
+  color: #f7b500;
+}
+.homepage-update-list .hr_style2 {
+  border-bottom: solid 1px #f4945a;
+  border-top: none;
+  clear: both;
+  margin: 0 !important;
+}
+.homepage-updates .view-more-stories a {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-align: center;
+}
+.homepage-updates .view-more-stories a {
+  width: 345px;
+  height: 52px;
+  border-radius: 30px;
+  border: solid 1px #ffffff;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.homepage-readysetgo{
+  height: 882px;
+  background-color: var(--off-white);
+}
+.homepage-rsg-text{
+  font-family: Semringah;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--orange);
+}
+.testimonial-text{
+  width: 722px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.testimonial-text a, .text-comment a{
+  letter-spacing: normal;
+  color: #0091ff;
+}
+.text-comment1{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.why-guest-text{
+  font-family: Semringah;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: var(--orange);
+}
+.why-guestscontainer .slideshow-container .text_black.text-comment1 strong{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+/****************
+HAPPY TO CARE
+*****************/
+.happy-tagline{
+  width: 1108px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: 1.13px;
+  text-align: center;
+  color: var(--black);
+}
+.happyyy-container{
+  height: 288px;
+  background-color: var(--off-white);
+  position: relative;
+  text-align: center;
+  margin-top: 70px;
+}
+.happy-nav-pills-container .nav li a {
+
+  border-radius: 10px;
+  border: solid 1px #ff883f;
+  background-image: linear-gradient(to bottom, #fff8e5, #ffcfb2);
+}
+
+/****************
+HOTELS
+*****************/
+.header-main.hotel-header.clearfix {
+  overflow: hidden;
+  height: 70px;
+  box-shadow: unset;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.amenities-card-title a{
+  font-family: Semringah;
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3px;
+  color: var(--black);
+}
+.amenities-card-title a:hover{
+  text-decoration: none;
+}
+.amenities-text{
+  font-family: Semringah;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 72px;
+  padding-bottom: 43px;
+}
+.hotel-explore-container .about-go-text {
+  font-family: Semringah;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--orange);
+}
+.explore-viewmap {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+}
+.explore-viewmap-minutes {
+  font-family: Semringah;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffcb05;
+}
+.hotel-desription .about-go-text {
+  font-family: Semringah;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+.hotel-banner-description{
+  width: 450px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+}
+.banner-view-location a{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.hotels-booking-text {
+  font-family: Semringah;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+}
+input#checkout, input#person {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+.hotel-map-location-container{
+  width: 375px;
+  height: 456px;
+  border-radius: 30px;
+  box-shadow: 0 6px 4px 0 rgba(220, 220, 220, 0.5);
+  border: solid 1px rgba(233, 233, 233, 0.74);
+  background-image: linear-gradient(to bottom, #ffffff 77%, #fffbee);
+}
+.find-us-text{
+  width: 226px;
+  height: 31px;
+  font-family: Semringah;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--orange)
+}
+.map-address-text{
+  font-family: Semringah;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--emerald)
+}
+.map-location-text {
+  font-family: Semringah;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--emerald);
+}
+.map-address-location{
+  width: 249px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: 0.88px;
+  color: var(--black);
+}
+.view-direction-link a{
+  width: 182px;
+  height: 35px;
+  border-radius: 17.5px;
+  background-color: var(--orange);
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-align: center;
+  color: #ffffff;
+  padding: 9px 10px 10px 22px;
+}
+.map-address-contact{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: 0.88px;
+  color: var(--black);
+}
+/****************
+ABOUT US
+*****************/
+.about-us-container{
+  height: 140px;
+  background-color: var(--off-white);
+  position: relative;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.about-us-text{
+  font-family: Semringah;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--orange);
+}
+
+.about-details, .about-details p{
+  width: 420px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: 1px;
+  text-align: justify;
+  color: var(--black);
+}
+
+
+/****************
+FOOTER
+*****************/
+.footer-logo img{
+  width: 110px;
+  height: 113px;
+  object-fit: contain;
+  margin-bottom: 37px;
+}
+.footer_contact a{
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.footer-title{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  color: var(--black);
+}
+.footer-hotels p {
+  width: 263px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.to-receive-text{
+  width: 263px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.footer-text a{
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.33;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.footer-text a:hover{
+  text-decoration: underline;
+}
+.subscribe-form .form-inline input {
+  width: 206px;
+  vertical-align: middle;
+  padding: 6px 11px 7px;
+  height: 45px;
+  border-radius: 3px 0 0 3px;
+  border: solid 1px #535353;
+  background-color: #ffffff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.67;
+  letter-spacing: normal;
+  color: #a9a9a9;
+}
+
+.subscribe-form .form-inline button {
+  width: 83px;
+  height: 45px;
+  border-radius: 0 5px 5px 0;
+  background-color: #535353;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.46;
+  letter-spacing: normal;
+  color: #ffffff;
+  border: solid 1px #535353;
+  margin-left: -2px;
+  margin-top: 5px;
+}
+.footer-copyright{
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.phone-img{
+  width: 24px;
+  height: 25px;
+  object-fit: contain;
+}
+.email-img{
+  width: 21px;
+  height: 16px;
+  object-fit: contain;
+}
+.select.language{ 
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+
+/****************
+TERMS AND CONDITION
+*****************/
+.terms-text, .terms-container p{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  text-align: justify;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+.terms-text, .terms-container p:last-child{
+  margin-bottom: 0;
+}
+.terms-text-bold, .terms-container b, .terms-container strong, .terms-container h2{
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+/****************
+PROMO
+*****************/
+.filter-group .form-inline label {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  color: var(--black);
+  margin-right: 17px;
+}
+select.form-control.form-select {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  color: var(--black);
+  }
+.promo-list .card_container.offer-card {
+  height: 491px;
+  border-radius: 50px;
+  box-shadow: 0 6px 4px 0 rgba(220, 220, 220, 0.5);
+  border: solid 1px rgba(233, 233, 233, 0.74);
+  background-image: linear-gradient(to bottom, #ffffff 77%, #fffbee);
+  margin-bottom: 42px;
+}
+
+.promo-list .card_container.offer-card img{
+height: 273px;
+border-radius: 50px 50px 0 0;
+/* background-color: #d8d8d8; */
+padding: 5px;
+width: 100%;
+}
+.promo-list .promo-status{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  width: 145px;
+  height: 35px;
+  border-radius: 6px;
+  background-color: #686868;
+}
+.promo-list .card-body .card-title a {
+  font-family: Semringah;
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3px;
+  color: var(--black);
+  text-decoration: none;
+  margin: 0;
+}
+.promo-list .card-text {
+  height: 90px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.promo-list .card-button a {
+  width: 120px;
+  height: 35px;
+  border-radius: 17.5px;
+  background-color: var(--orange);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-align: center;
+  color: #ffffff;
+}
+.promo-list .card-button a:hover {
+  background-color: #DD6116;
+  text-decoration: none;
+}
+.pagination>li>a, .pagination>li>span {
+  font-family: Montserrat;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: normal;
+color: var(--black);
+}
+
+/****************
+BLOGS
+*****************/
+form.form-inline.blog-form label {
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: 1.08px;
+color: var(--black);
+margin-right: 19px;
+}
+.blog-form .form-inline label {
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: 1.08px;
+color: var(--black);
+margin-right: 19px;
+}
+.blog-container .card_container.offer-card {
+  height: 600px;
+  border-radius: 50px;
+  box-shadow: 0 6px 4px 0 rgba(220, 220, 220, 0.5);
+  border: solid 1px rgba(233, 233, 233, 0.74);
+  background-image: linear-gradient(to bottom, #ffffff 77%, #fffbee);
+  margin-bottom: 42px;
+}
+.go-title a{
+  font-family: Semringah;
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 3px;
+  color: var(--emerald);
+  margin-bottom: 8px;
+}
+.go-address a{
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.86px;
+  color: var(--emerald);
+}
+.go-description{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.promo-list.blog-container .card-text {
+height: 75px;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: 0.86px;
+color: var(--black);
+}
+/****************
+UPDATES
+*****************/
+.updates-title a, .update-title a {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.updates-details, .update-details {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.updates-details a {
+  letter-spacing: 1.17px;
+  color: #0091ff;
+}
+/****************
+UPDATES INNER
+*****************/
+.back-to a{
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: 2px;
+  color: #fc7f04;
+  cursor: pointer;
+}
+.updates-inner-title{
+  font-family: Semringah;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.updates-inner-date{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  color: var(--black);
+  margin-bottom: 7px;
+}
+.updates-inner-details, .updates-inner-details p{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.other-updates{
+  font-family: Semringah;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  color: var(--orange);
+}
+.updates-inner-description{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: 1px;
+  color: var(--black)
+}
+
+/****************
+BLOGS INNER
+*****************/
+.share-text{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.88px;
+  color: var(--black);
+  margin-top: 23px;
+  margin-right: 9px;
+}
+.fa-social-share img {
+  margin-right: 14px;
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+.blog-inner .card-body .card-title a {
+  font-family: Semringah;
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 3px;
+  color: var(--black);
+  text-decoration: none;
+  margin: 0;
+}
+.blog-inner .offers-page-link a{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.17px;
+  color: #0091ff;
+  text-decoration: underline;
+}
+
+/****************
+JOB APPLICATION FORM
+*****************/
+.application-details{
+  width: 770px;
+  height: 887px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 0 rgba(171, 171, 171, 0.5);
+  border: solid 1px #c3c3c3;
+  background-color: #ffffff;
+}
+.addplication-title{
+  font-family: Semringah;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  color: var(--emerald);
+}
+.addplication-address{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.required-fields{
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #e02020;
+}
+.choose-button button{
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f58840;
+}
+.choose-file-note{
+  width: 344px;
+  height: 28px;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: 0.85px;
+  color: var(--black);
+  margin-top: 7px;
+}
+.application-form label{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+.btn-submit{
+  width: 300px;
+  height: 52px;
+  border-radius: 30px;
+  background-image: linear-gradient(154deg, var(--shamrock-green) 31%, var(--emerald) 63%);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 15px;
+}
+.btn-submit:active, .btn-submit:focus{
+  width: 300px;
+  height: 52px;
+  border-radius: 30px;
+  background-image: linear-gradient(154deg, var(--shamrock-green) 31%, var(--emerald) 63%);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  outline: none !important;
+}
+.btn-submit:hover{
+  text-decoration: none;
+  background-color: #038741;
+  background-image: unset;
+  color: #ffffff;
+}
+.application-form .be-sure-note{
+  width: 505px;
+  height: 36px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--black);
+  margin-top: 16px;
+}
+.modal-text-success{
+  width: 504px;
+  height: 84px;
+  font-family: Semringah;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: var(--orange);
+}
+.modal-text-notify{
+  width: 510px;
+  height: 48px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 1.08px;
+  text-align: center;
+  color: var(--black);
+}
+/****************
+CAREERS
+*****************/
+.view-careers h3{
+  font-family: Semringah;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  color: var(--emerald);
+}
+.career-address{
+  font-family: Semringah;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  color: var(--emerald);
+}
+.career-poosition{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: var(--orange);
+  margin-top: 36px;
+  margin-bottom: 11px;
+}
+.career-detaills, .career-department, .career-detaills p{
+  width: 680px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: 1px;
+  color: var(--black);
+  margin-bottom: 38px;
+}
+.career-detaills a{
+  color: #0091ff;
+}
+.career-info .career-separator {
+  border-bottom: 1px dashed #979797;
+}
+.career-info .career-separator:last-child {
+  border-bottom: none;
+}
+.career-info {
+  border-bottom: solid 1px #979797;
+  padding: 0 0 17px 0;
+}
+.career-info:last-child {
+  border-bottom: none;
+  padding: 0;
+}
+
+/****************
+CONTACT US
+*****************/
+.contact-us-address, .view-contact-us h3{
+  font-family: Semringah;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  color: var(--orange);
+  margin-bottom: 13px;
+  margin-top: 0;
+}
+.contact-address{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: var(--emerald);
+  margin-bottom: 5px;
+}
+.contact-location{
+  /* width: 220px; */
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.75px;
+  color: var(--black);
+  position: relative;
+  text-indent: 25px;
+  background-image: url(../images/svg/location-icon.svg);
+  background-repeat: no-repeat;
+  min-height: 20px;
+  margin-bottom: 18px;
+}
+.contact-number {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.75px;
+  color: var(--black);
+  position: relative;
+  text-indent: 10px;
+  background-image: url(../images/svg/contact-icon.svg);
+  background-repeat: no-repeat;
+}
+
+.text_contactinfo ul{
+  list-style-type: none;
+  margin-left: -25px;
+}
+
+.icon-map-pin.howtoget_mapicon {
+  position: absolute;
+}
+
+.txt-locationtitle {
+  display: inline-block;
+  /* width: 280px; */
+  padding: 0 0 8px 24px;
+  vertical-align: top;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.75px;
+  color: var(--black);
+}
+
+/****************
+FAQS
+*****************/
+.faq-header {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.11px;
+  text-align: center;
+  color: var(--black);
+}
+.faqs h3{
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--orange);
+}
+.faqs .panel-default > .panel-heading{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.13;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.faqs .panel-body {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+.faq-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--black);
+  margin-top: 10px;
+}
+

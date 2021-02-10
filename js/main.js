@@ -1,237 +1,291 @@
-// 
+/** 
+ * ===================================================================
+ * main js
+ *
+ * ------------------------------------------------------------------- 
+ */ 
 
-(function($,sr) {
-  // debouncing function from John Hann
-  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
-  var debounce = function (func, threshold, execAsap) {
-    var timeout;
-    return function debounced () {
-      var obj = this, args = arguments;
-      function delayed () {
-        if (!execAsap)
-                          func.apply(obj, args);
-        timeout = null;
-      }
-      ;
-      if (timeout)
-                    clearTimeout(timeout); else if (execAsap)
-                    func.apply(obj, args);
-      timeout = setTimeout(delayed, threshold || 100);
-    }
-    ;
-  }
-  // smartresize 
-  jQuery.fn[sr] = function(fn) {
-    return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
-  }
-  ;
-}
-)(jQuery,'smartresize');
+(function($) {
 
-$(function() {
+	"use strict";
 
-    // Fix the Home Height
+	/*---------------------------------------------------- */
+	/* Preloader
+	------------------------------------------------------ */ 
+   $(window).load(function() {
 
-    var setHomeBannerHeight = function(){
-	   var homeHeight= $(window).height();
-	   $('#overlay-1').height(homeHeight);
-    }
-    setHomeBannerHeight();
+      // will first fade out the loading animation 
+    	$("#loader").fadeOut("slow", function(){
 
-    // Arrow drop effect
+        // will fade out the whole DIV that covers the website.
+        $("#preloader").delay(300).fadeOut("slow");
 
-    var $scrollDownArrow = $('.bottom > a');
+      });       
 
-    // Smooth Scrolling and remove Hash tag from link
+  	})
 
-    $('a[href*=#]:not([href=#])').click(function() {
-       
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000, function(){
-                  
-                });
-                return false;
-            }
-        }
+
+  	/*---------------------------------------------------- */
+  	/* FitText Settings
+  	------------------------------------------------------ */
+  	setTimeout(function() {
+
+   	$('#intro h1').fitText(1, { minFontSize: '42px', maxFontSize: '84px' });
+
+  	}, 100);
+
+
+	/*---------------------------------------------------- */
+	/* FitVids
+	------------------------------------------------------ */ 
+  	$(".fluid-video-wrapper").fitVids();
+
+
+	/*---------------------------------------------------- */
+	/* Owl Carousel
+	------------------------------------------------------ */ 
+	$("#owl-slider").owlCarousel({
+        navigation: false,
+        pagination: true,
+        itemsCustom : [
+	        [0, 1],
+	        [700, 2],
+	        [960, 3]
+	     ],
+        navigationText: false
     });
 
 
-  ///////////////////////////////
-  // Center Home Slideshow Text
-  ///////////////////////////////
-  function centerHomeBannerText() {
-    var bannerText = jQuery('#header .middle');
-    var bannerTextTop = (jQuery('#header').actual('height')/2) - (jQuery('#header .middle').actual('height')/2) - 20;
-    bannerText.css('padding-top', bannerTextTop+'px');
-    bannerText.show();
-  }
-  centerHomeBannerText();
+	/*----------------------------------------------------- */
+	/* Alert Boxes
+  	------------------------------------------------------- */
+	$('.alert-box').on('click', '.close', function() {
+	  $(this).parent().fadeOut(500);
+	});	
 
 
+	/*----------------------------------------------------- */
+	/* Stat Counter
+  	------------------------------------------------------- */
+   var statSection = $("#stats"),
+       stats = $(".stat-count");
 
-    jQuery(window).smartresize(function() {
-        setHomeBannerHeight();
-        centerHomeBannerText();
-    });
-    
-});
+   statSection.waypoint({
+
+   	handler: function(direction) {
+
+      	if (direction === "down") {       		
+
+			   stats.each(function () {
+				   var $this = $(this);
+
+				   $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+				   	duration: 4000,
+				   	easing: 'swing',
+				   	step: function (curValue) {
+				      	$this.text(Math.ceil(curValue));
+				    	}
+				  	});
+				});
+
+       	} 
+
+       	// trigger once only
+       	this.destroy();      	
+
+		},
+			
+		offset: "90%"
+	
+	});	
 
 
-$( function() {
-  // init Isotope
-  var $container = $('.isotope').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows',
-    getSortData: {
-      name: '.name',
-      symbol: '.symbol',
-      number: '.number parseInt',
-      category: '[data-category]',
-      weight: function( itemElem ) {
-        var weight = $( itemElem ).find('.weight').text();
-        return parseFloat( weight.replace( /[\(\)]/g, '') );
-      }
-    }
-  });
+	/*---------------------------------------------------- */
+	/*	Masonry
+	------------------------------------------------------ */
+	var containerProjects = $('#folio-wrapper');
 
-  // filter functions
-  var filterFns = {
-    // show if number is greater than 50
-    numberGreaterThan50: function() {
-      var number = $(this).find('.number').text();
-      return parseInt( number, 10 ) > 50;
-    },
-    // show if name ends with -ium
-    ium: function() {
-      var name = $(this).find('.name').text();
-      return name.match( /ium$/ );
-    }
-  };
+	containerProjects.imagesLoaded( function() {
 
-  // bind filter button click
-  $('#filters').on( 'click', 'button', function() {
-    var filterValue = $( this ).attr('data-filter');
-    // use filterFn if matches value
-    filterValue = filterFns[ filterValue ] || filterValue;
-    $container.isotope({ filter: filterValue });
-  });
+		containerProjects.masonry( {		  
+		  	itemSelector: '.folio-item',
+		  	resize: true 
+		});
 
-  // bind sort button click
-  $('#sorts').on( 'click', 'button', function() {
-    var sortByValue = $(this).attr('data-sort-by');
-    $container.isotope({ sortBy: sortByValue });
-  });
+	});
+
+
+	/*----------------------------------------------------*/
+	/*	Modal Popup
+	------------------------------------------------------*/
+   $('.item-wrap a').magnificPopup({
+
+      type:'inline',
+      fixedContentPos: false,
+      removalDelay: 300,
+      showCloseBtn: false,
+      mainClass: 'mfp-fade'
+
+   });
+
+   $(document).on('click', '.popup-modal-dismiss', function (e) {
+   	e.preventDefault();
+   	$.magnificPopup.close();
+   });
+
+	
+	/*-----------------------------------------------------*/
+  	/* Navigation Menu
+   ------------------------------------------------------ */  
+   var toggleButton = $('.menu-toggle'),
+       nav = $('.main-navigation');
+
+   // toggle button
+   toggleButton.on('click', function(e) {
+
+		e.preventDefault();
+		toggleButton.toggleClass('is-clicked');
+		nav.slideToggle();
+
+	});
+
+   // nav items
+  	nav.find('li a').on("click", function() {   
+
+   	// update the toggle button 		
+   	toggleButton.toggleClass('is-clicked'); 
+   	// fadeout the navigation panel
+   	nav.fadeOut();   		
+   	     
+  	});
+
+
+   /*---------------------------------------------------- */
+  	/* Highlight the current section in the navigation bar
+  	------------------------------------------------------ */
+	var sections = $("section"),
+	navigation_links = $("#main-nav-wrap li a");	
+
+	sections.waypoint( {
+
+       handler: function(direction) {
+
+		   var active_section;
+
+			active_section = $('section#' + this.element.id);
+
+			if (direction === "up") active_section = active_section.prev();
+
+			var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');			
+
+         navigation_links.parent().removeClass("current");
+			active_link.parent().addClass("current");
+
+		}, 
+
+		offset: '25%'
+	});
+
+
+	/*---------------------------------------------------- */
+  	/* Smooth Scrolling
+  	------------------------------------------------------ */
+  	$('.smoothscroll').on('click', function (e) {
+	 	
+	 	e.preventDefault();
+
+   	var target = this.hash,
+    	$target = $(target);
+
+    	$('html, body').stop().animate({
+       	'scrollTop': $target.offset().top
+      }, 800, 'swing', function () {
+      	window.location.hash = target;
+      });
+
+  	});  
   
-  // change is-checked class on buttons
-  $('.button-group').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
-    });
-  });
 
-  
-});
-
-function countUpTo(count,selector,max)
-    {
-      console.log("count--> "+count);
-        var div_by = count,
-            speed = Math.round(count / div_by),
-            $display = selector,
-            run_count = 1,
-            int_speed = 24;
-
-        var int = setInterval(function() {
-            if(run_count < div_by){
-                $display.text(speed * run_count);
-                run_count++;
-            } else if(parseInt($display.text()) < count) {
-                var curr_count = parseInt($display.text()) + 1;
-                var text = "";
-                if(max>99){
-                     if(curr_count<10){
-                        text = text+"00"+curr_count;
-                    }
-                    /*else if(curr_count < 100 && curr_count >9){
-                        text = text+"0"+curr_count;
-                    }*/
-                    else{
-                      text = curr_count;
-                    }
-                }else if(max<100 && max>9){
-                     if(curr_count<10){
-                        text = text+"00"+curr_count;
-                    }
-                   /*else if(curr_count < 100 && curr_count >9){
-                        text = text+"0"+curr_count;
-                    }*/
-                    else{
-                      text = curr_count;
-                    }
-                }else{
-                      if(curr_count<10){
-                        text = text+"00"+curr_count;
-                    }
-                   /*else if(curr_count < 100 && curr_count >9){
-                        text = text+"0"+curr_count;
-                    }*/
-                    else{
-                      text = curr_count;
-                    }
-                }
-               
-                $display.text(text);
-            } else {
-                clearInterval(int);
-            }
-        }, int_speed);
-    }
+   /*---------------------------------------------------- */
+	/*  Placeholder Plugin Settings
+	------------------------------------------------------ */ 
+	$('input, textarea, select').placeholder()  
 
 
-var firstTime = true;
-$(document).scroll(function(event) {
+  	/*---------------------------------------------------- */
+	/*	contact form
+	------------------------------------------------------ */
+
+	/* local validation */
+	$('#contactForm').validate({
+
+		/* submit via ajax */
+		submitHandler: function(form) {
+
+			var sLoader = $('#submit-loader');
+
+			$.ajax({      	
+
+		      type: "POST",
+		      url: "inc/sendEmail.php",
+		      data: $(form).serialize(),
+		      beforeSend: function() { 
+
+		      	sLoader.fadeIn(); 
+
+		      },
+		      success: function(msg) {
+
+	            // Message was sent
+	            if (msg == 'OK') {
+	            	sLoader.fadeOut(); 
+	               $('#message-warning').hide();
+	               $('#contactForm').fadeOut();
+	               $('#message-success').fadeIn();   
+	            }
+	            // There was an error
+	            else {
+	            	sLoader.fadeOut(); 
+	               $('#message-warning').html(msg);
+		            $('#message-warning').fadeIn();
+	            }
+
+		      },
+		      error: function() {
+
+		      	sLoader.fadeOut(); 
+		      	$('#message-warning').html("Something went wrong. Please try again.");
+		         $('#message-warning').fadeIn();
+
+		      }
+
+	      });     		
+  		}
+
+	});
 
 
+ 	/*----------------------------------------------------- */
+  	/* Back to top
+   ------------------------------------------------------- */ 
+	var pxShow = 300; // height on which the button will show
+	var fadeInTime = 400; // how slow/fast you want the button to show
+	var fadeOutTime = 400; // how slow/fast you want the button to hide
+	var scrollSpeed = 300; // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
 
-  var result = $('.count-timer').isOnScreen();
+   // Show or hide the sticky footer button
+	jQuery(window).scroll(function() {
 
-  if(result == true) {
-      console.log("on screen");
+		if (!( $("#header-search").hasClass('is-visible'))) {
 
-      if(firstTime){
-        firstTime = false;
-            
-          var count1 = $('.count1'),
-            count2 = $('.count2'),
-            count3 = $('.count3'),
-            count4 = $('.count4'),
-            count5 = $('.count5'),
-            count6 = $('.count6')
-            count1Num = count1.text(),
-            count2Num = count2.text(),
-            count3Num = count3.text(),
-            count4Num = count4.text(),
-            count5Num = count5.text(),
-            count6Num = count6.text();
+			if (jQuery(window).scrollTop() >= pxShow) {
+				jQuery("#go-top").fadeIn(fadeInTime);
+			} else {
+				jQuery("#go-top").fadeOut(fadeOutTime);
+			}
 
-            var max = Math.max(parseInt(count1Num),parseInt(count2Num));
-            max = Math.max(max,parseInt(count6Num));
-            console.log(max);
+		}		
 
-            countUpTo(count1Num,count1,max);
-            countUpTo(count2Num,count2,max);
-            countUpTo(count3Num,count3,max);
-            countUpTo(count4Num,count4,max);
-            countUpTo(count5Num,count5,max);
-            countUpTo(count6Num,count6,max);
-      }
+	});		
 
-    }
-});
+})(jQuery);
